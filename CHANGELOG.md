@@ -1,5 +1,12 @@
 # Changelog
 
+## v4.0.0
+
+- Added investor business section before the closing slide.
+- Added Market Size, Go-to-Market, Revenue Model, Use of Funds and Milestones pages.
+- Fixed page order so business pages appear before the final closing page.
+- Preserved the v3.3 visual system and avoided global layout regression.
+
 ## v3.3.0
 
 - Added investor-deck pages: Traction, Technology Moat, Founder, Vision & Roadmap, and Closing.
