@@ -2,8 +2,10 @@
   \begin{beamercolorbox}[wd=#1,ht=\SBCardH,dp=0.22cm,sep=0.10cm,center,rounded=true,shadow=false]{sbcard}%
     \begin{minipage}[c][\SBCardInnerH][c]{0.92\linewidth}
       \centering
-      {\SBFontTitle\fontsize{10.0}{12.0}\selectfont\color{SBText}#2}\par
+      {\color{SBPrimary}\rule{\SBAccentRuleW}{\SBAccentRuleH}}\par
       \vspace{0.06cm}
+      {\SBFontTitle\fontsize{10.0}{12.0}\selectfont\color{SBText}#2}\par
+      \vspace{\SBCardTitleGap}
       {\SBFontBody\fontsize{8.0}{9.8}\selectfont\color{SBMuted}#3}
     \end{minipage}
   \end{beamercolorbox}%
@@ -14,7 +16,9 @@
     \begin{minipage}[c][\SBMetricInnerH][c]{0.92\linewidth}
       \centering
       {\SBFontTitle\fontsize{18}{21}\selectfont\color{SBPrimary}#2}\par
-      \vspace{0.03cm}
+      \vspace{0.025cm}
+      {\color{SBPrimary}\rule{0.42cm}{0.8pt}}\par
+      \vspace{0.025cm}
       {\SBFontBody\fontsize{8.0}{9.8}\selectfont\color{SBMuted}#3}
     \end{minipage}
   \end{beamercolorbox}%
@@ -49,6 +53,7 @@
 \newcommand{\SBStackLine}[2]{%
   \begin{beamercolorbox}[wd=\linewidth,ht=\SBLineH,dp=0.10cm,sep=0.08cm,rounded=true]{sbline}%
     \begin{minipage}[c][0.40cm][c]{0.97\linewidth}
+      {\color{SBPrimary}\rule{0.18cm}{0.9pt}}\hspace{0.10cm}%
       {\SBFontTitle\fontsize{9.6}{11.8}\selectfont\color{SBText}#1}\hfill
       {\SBFontBody\fontsize{8.0}{9.8}\selectfont\color{SBGray}#2}
     \end{minipage}
@@ -60,6 +65,8 @@
   \begin{beamercolorbox}[wd=#1,ht=\SBPlatformH,dp=0.18cm,sep=0.08cm,center,rounded=true,shadow=false]{sbcard}%
     \begin{minipage}[c][\SBPlatformInnerH][c]{0.92\linewidth}
       \centering
+      {\color{SBPrimary}\rule{0.40cm}{0.8pt}}\par
+      \vspace{0.05cm}
       {\SBFontTitle\fontsize{9.2}{11.0}\selectfont\color{SBText}#2}\par
       \vspace{0.045cm}
       {\SBFontBody\fontsize{7.4}{9.0}\selectfont\color{SBMuted}#3}
@@ -83,8 +90,10 @@
   \begin{beamercolorbox}[wd=#1,ht=1.18cm,dp=0.16cm,sep=0.08cm,center,rounded=true,shadow=false]{sbcard}%
     \begin{minipage}[c][1.02cm][c]{0.90\linewidth}
       \centering
-      {\SBFontTitle\fontsize{9.2}{11.0}\selectfont\color{SBText}#2}\par
+      {\color{SBPrimary}\rule{0.34cm}{0.75pt}}\par
       \vspace{0.04cm}
+      {\SBFontTitle\fontsize{9.2}{11.0}\selectfont\color{SBText}#2}\par
+      \vspace{0.035cm}
       {\SBFontBody\fontsize{7.2}{8.8}\selectfont\color{SBMuted}#3}
     \end{minipage}
   \end{beamercolorbox}%
@@ -105,7 +114,9 @@
     \begin{minipage}[c][1.24cm][c]{0.90\linewidth}
       \centering
       {\SBFontTitle\fontsize{18}{21}\selectfont\color{SBPrimary}#2}\par
-      \vspace{0.04cm}
+      \vspace{0.035cm}
+      {\color{SBPrimary}\rule{0.44cm}{0.8pt}}\par
+      \vspace{0.035cm}
       {\SBFontBody\fontsize{7.6}{9.2}\selectfont\color{SBMuted}#3}
     \end{minipage}
   \end{beamercolorbox}%
@@ -117,7 +128,9 @@
     \begin{minipage}[c][1.02cm][c]{0.90\linewidth}
       \centering
       {\SBFontTitle\fontsize{17.2}{20}\selectfont\color{SBPrimary}#2}\par
-      \vspace{0.03cm}
+      \vspace{0.025cm}
+      {\color{SBPrimary}\rule{0.38cm}{0.75pt}}\par
+      \vspace{0.025cm}
       {\SBFontBody\fontsize{7.4}{9.0}\selectfont\color{SBMuted}#3}
     \end{minipage}
   \end{beamercolorbox}%
@@ -126,6 +139,7 @@
 \newcommand{\SBMoatLine}[2]{%
   \begin{beamercolorbox}[wd=5.5cm,ht=0.52cm,dp=0.10cm,sep=0.08cm,rounded=true]{sbline}%
     \begin{minipage}[c][0.40cm][c]{0.97\linewidth}
+      {\color{SBPrimary}\rule{0.18cm}{0.8pt}}\hspace{0.08cm}%
       {\SBFontTitle\fontsize{8.8}{10.6}\selectfont\color{SBText}#1}\hfill
       {\SBFontBody\fontsize{7.2}{8.8}\selectfont\color{SBGray}#2}
     \end{minipage}
@@ -143,7 +157,7 @@
   \end{beamercolorbox}%
 }
 
-% v5.1 design-system aliases for future pages.
+% v5.1/v5.2 design-system aliases for future pages.
 \let\SmartCard\SBCard
 \let\SmartMetric\SBMetric
 \let\SmartPlatformCard\SBPlatformCard
@@ -154,4 +168,9 @@
     \column{0.48\textwidth}#1
     \column{0.48\textwidth}#2
   \end{columns}
+}
+
+% v5.2 visual helpers.
+\newcommand{\SBSectionKicker}[1]{%
+  {\SBFontTitle\fontsize{8.2}{10}\selectfont\color{SBPrimary}\MakeUppercase{#1}}
 }

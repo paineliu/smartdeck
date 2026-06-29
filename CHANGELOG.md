@@ -1,5 +1,15 @@
 # Changelog
 
+## v5.2.0
+
+- Visual Upgrade release focused on theme polish, not content changes.
+- Refined the color system with softer card, metric and line surfaces.
+- Upgraded standard cards, metrics, platform cards, stack lines and stat cards with subtle primary accent rules.
+- Improved vertical centering and visual hierarchy across reusable components.
+- Expanded the icon-token layer to prepare for the future SVG/Lucide icon library.
+- Kept slide order and content unchanged from v5.1.
+- Recompiled successfully with no Overfull/Underfull warnings.
+
 ## v5.1.0
 
 - Added `theme/design_tokens.tex` as the single source of truth for layout, spacing and component dimensions.
