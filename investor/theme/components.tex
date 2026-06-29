@@ -1,0 +1,56 @@
+\newcommand{\SBMetric}[2]{%
+  \begin{tikzpicture}
+    \node[align=center] {
+      {\color{SBBlue}\sbTitleFont\fontsize{32}{36}\selectfont #1}\\[-1pt]
+      {\color{SBMuted}\sbBodyFont\fontsize{10.5}{13}\selectfont #2}
+    };
+  \end{tikzpicture}
+}
+
+\newcommand{\SBCard}[4]{%
+  \begin{tikzpicture}
+    \node[
+      draw=SBLine,
+      rounded corners=10pt,
+      line width=0.85pt,
+      fill=white,
+      minimum width=#1,
+      minimum height=#2,
+      align=left,
+      inner sep=12pt
+    ] {
+      {\color{SBBlue}\sbTitleFont\fontsize{14}{17}\selectfont #3}\\[4pt]
+      {\color{SBMuted}\sbBodyFont\fontsize{10.2}{13.5}\selectfont #4}
+    };
+  \end{tikzpicture}
+}
+
+\newcommand{\SBTechCard}[3]{%
+  \begin{tikzpicture}
+    \node[
+      draw=SBLine,
+      rounded corners=10pt,
+      line width=0.85pt,
+      fill=SBLight,
+      minimum width=4.05cm,
+      minimum height=1.38cm,
+      align=left,
+      inner sep=10pt
+    ] {
+      {\color{SBText}\sbTitleFont\fontsize{13}{16}\selectfont #1}\\[3pt]
+      {\color{SBGray}\sbBodyFont\fontsize{9.4}{12}\selectfont #2}\\[2pt]
+      {\color{SBBlue}\sbTitleFont\fontsize{8.5}{11}\selectfont #3}
+    };
+  \end{tikzpicture}
+}
+
+\newcommand{\SBTinyPill}[2]{%
+  \tikz[baseline=(x.base)] \node[
+    rounded corners=7pt,
+    fill=#1,
+    inner xsep=8pt,
+    inner ysep=3pt,
+    text=white,
+    font=\sbTitleFont\fontsize{8}{10}\selectfont
+  ] (x) {#2};
+}

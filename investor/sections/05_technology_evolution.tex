@@ -1,0 +1,38 @@
+\begin{frame}[plain]
+\SBPageTitle{20+ Years of Language Technology}
+
+\vspace{0.25cm}
+
+\begin{center}
+\begin{tikzpicture}[
+  node/.style={draw=SBLine, rounded corners=8pt, fill=white, minimum width=1.60cm, minimum height=0.70cm, align=center, font=\sbTitleFont\fontsize{8.3}{10.5}\selectfont, text=SBText},
+  arrow/.style={->, line width=1.0pt, draw=SBBlue, >=Stealth}
+]
+\node[node] (n1) {Input\\Method};
+\node[node, right=0.22cm of n1] (n2) {Pinyin};
+\node[node, right=0.22cm of n2] (n3) {Handwriting};
+\node[node, right=0.22cm of n3] (n4) {OCR};
+\node[node, right=0.22cm of n4] (n5) {Search};
+\node[node, right=0.22cm of n5] (n6) {NLP};
+\node[node, right=0.22cm of n6] (n7) {RAG};
+\node[node, right=0.22cm of n7] (n8) {Edge AI};
+\node[node, right=0.22cm of n8, draw=SBBlue, fill=SBSoftBlue, text=SBBlue] (n9) {AI\\Devices};
+
+\foreach \a/\b in {n1/n2,n2/n3,n3/n4,n4/n5,n5/n6,n6/n7,n7/n8,n8/n9}{
+  \draw[arrow] (\a) -- (\b);
+}
+
+\node[anchor=west, align=left] at (-0.2,-1.65) {
+{\color{SBBlue}\sbTitleFont\fontsize{38}{42}\selectfont 20+}\\[-2pt]
+{\color{SBMuted}\sbBodyFont\fontsize{13}{17}\selectfont years of continuous R\&D}
+};
+
+\node[anchor=west, align=left] at (4.15,-1.65) {
+{\color{SBText}\sbTitleFont\fontsize{17}{22}\selectfont Not an AI startup story.}\\[5pt]
+{\color{SBMuted}\sbBodyFont\fontsize{12}{17}\selectfont A long-term evolution from input technology to language intelligence infrastructure.}
+};
+\end{tikzpicture}
+\end{center}
+
+\SBFooter{Technology Evolution}
+\end{frame}
