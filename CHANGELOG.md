@@ -1,5 +1,13 @@
 # Changelog
 
+## v3.2.0
+
+- Added Market Opportunity slide.
+- Added Product Matrix slide.
+- Added Business Model slide.
+- Added Competitive Advantage slide.
+- Added conservative v3.2 business story components without changing the stable layout.
+
 ## v2.9.2
 
 - Removed the Knowledge Engine bottom `Powered applications` line to avoid footer overlap.

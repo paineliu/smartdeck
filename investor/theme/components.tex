@@ -65,3 +65,48 @@
     \end{minipage}
   \end{beamercolorbox}%
 }
+
+
+% v3.2 business story components. Local, conservative, and Beamer-stable.
+\newcommand{\SBMarketNode}[3]{%
+  \begin{beamercolorbox}[wd=#1,ht=1.05cm,dp=0.16cm,sep=0.08cm,center,rounded=true,shadow=false]{sbcard}%
+    \begin{minipage}[c][0.92cm][c]{0.92\linewidth}
+      \centering
+      {\SBFontTitle\fontsize{9.4}{11.2}\selectfont\color{SBText}#2}\par
+      \vspace{0.04cm}
+      {\SBFontBody\fontsize{7.4}{9.0}\selectfont\color{SBMuted}#3}
+    \end{minipage}
+  \end{beamercolorbox}%
+}
+
+\newcommand{\SBMatrixCell}[3]{%
+  \begin{beamercolorbox}[wd=#1,ht=1.18cm,dp=0.16cm,sep=0.08cm,center,rounded=true,shadow=false]{sbcard}%
+    \begin{minipage}[c][1.02cm][c]{0.90\linewidth}
+      \centering
+      {\SBFontTitle\fontsize{9.2}{11.0}\selectfont\color{SBText}#2}\par
+      \vspace{0.04cm}
+      {\SBFontBody\fontsize{7.2}{8.8}\selectfont\color{SBMuted}#3}
+    \end{minipage}
+  \end{beamercolorbox}%
+}
+
+\newcommand{\SBFlowNode}[3]{%
+  \begin{beamercolorbox}[wd=#1,ht=0.88cm,dp=0.13cm,sep=0.07cm,center,rounded=true,shadow=false]{sbmetric}%
+    \begin{minipage}[c][0.74cm][c]{0.92\linewidth}
+      \centering
+      {\SBFontTitle\fontsize{8.9}{10.6}\selectfont\color{SBPrimary}#2}\par
+      {\SBFontBody\fontsize{7.1}{8.6}\selectfont\color{SBMuted}#3}
+    \end{minipage}
+  \end{beamercolorbox}%
+}
+
+\newcommand{\SBAdvantageCard}[3]{%
+  \begin{beamercolorbox}[wd=#1,ht=1.42cm,dp=0.20cm,sep=0.08cm,center,rounded=true,shadow=false]{sbmetric}%
+    \begin{minipage}[c][1.24cm][c]{0.90\linewidth}
+      \centering
+      {\SBFontTitle\fontsize{18}{21}\selectfont\color{SBPrimary}#2}\par
+      \vspace{0.04cm}
+      {\SBFontBody\fontsize{7.6}{9.2}\selectfont\color{SBMuted}#3}
+    \end{minipage}
+  \end{beamercolorbox}%
+}

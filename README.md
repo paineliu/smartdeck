@@ -44,3 +44,8 @@ v2.6.0 — layout polish, fixed footer, fixed-height cards.
 ## Current Version
 
 v2.7.0 — unified slide lead typography and card height polish.
+
+
+## Current Version
+
+v3.2.0 - business story expansion with Market, Product Matrix, Business Model and Competitive Advantage.
