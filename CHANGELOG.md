@@ -1,5 +1,14 @@
 # Changelog
 
+## v5.3.0
+
+- Added `investor/assets/icons/` with a unified outline SVG source icon set.
+- Added `investor/assets/illustrations/` with the first architecture illustration source.
+- Added `theme/icon_components.tex` with compile-safe icon-aware components.
+- Added `\SBIconCard`, `\SBIconMetric`, and `\SBIconLabel` for future icon-driven pages.
+- Upgraded selected pages with icon-aware components: Language Stack, SmartSearch, Traction, GTM, Use of Funds, and Team.
+- Kept deck content and story flow unchanged; this release focuses on visual language and icon system foundations.
+
 ## v5.2.0
 
 - Visual Upgrade release focused on theme polish, not content changes.

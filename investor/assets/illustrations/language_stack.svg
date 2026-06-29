@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" fill="none">
+<rect width="960" height="420" rx="28" fill="#F8FAFC"/>
+<text x="480" y="70" font-family="Helvetica,Arial" font-size="28" font-weight="700" fill="#0F172A" text-anchor="middle">Language Intelligence Stack</text>
+<rect x="290" y="110" width="380" height="48" rx="14" fill="#EEF6FF" stroke="#D8EAFE"/>
+<rect x="310" y="180" width="340" height="48" rx="14" fill="#F9FBFF" stroke="#E2E8F0"/>
+<rect x="330" y="250" width="300" height="48" rx="14" fill="#F9FBFF" stroke="#E2E8F0"/>
+<rect x="350" y="320" width="260" height="48" rx="14" fill="#F9FBFF" stroke="#E2E8F0"/>
+<g font-family="Helvetica,Arial" font-size="20" fill="#334155" text-anchor="middle">
+<text x="480" y="141">Applications</text><text x="480" y="211">Agents</text><text x="480" y="281">Knowledge</text><text x="480" y="351">Runtime</text>
+</g></svg>

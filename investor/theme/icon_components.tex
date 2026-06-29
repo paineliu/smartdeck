@@ -1,0 +1,70 @@
+\ProvidesFile{icon_components.tex}[2026/06/29 SmartDeck icon components]
+
+% v5.3 compile-safe icon layer.
+% The visual token is a small rounded badge; SVG sources are stored in assets/icons
+% and can replace this badge layer in v5.4 without changing page content.
+
+\newcommand{\SBIconToken}[1]{%
+  \begin{beamercolorbox}[wd=0.54cm,ht=0.34cm,dp=0.06cm,sep=0.02cm,center,rounded=true,shadow=false]{sbmetric}%
+    {\SBFontTitle\fontsize{6.2}{7.2}\selectfont\color{SBPrimary}#1}
+  \end{beamercolorbox}%
+}
+
+\newcommand{\SBIconFor}[1]{%
+  \ifcsname SBIconName@#1\endcsname
+    \SBIconToken{\csname SBIconName@#1\endcsname}%
+  \else
+    \SBIconToken{#1}%
+  \fi
+}
+
+\expandafter\def\csname SBIconName@ai\endcsname{AI}
+\expandafter\def\csname SBIconName@language\endcsname{LI}
+\expandafter\def\csname SBIconName@search\endcsname{SR}
+\expandafter\def\csname SBIconName@knowledge\endcsname{KN}
+\expandafter\def\csname SBIconName@education\endcsname{ED}
+\expandafter\def\csname SBIconName@enterprise\endcsname{B2B}
+\expandafter\def\csname SBIconName@api\endcsname{API}
+\expandafter\def\csname SBIconName@gpu\endcsname{GPU}
+\expandafter\def\csname SBIconName@runtime\endcsname{RT}
+\expandafter\def\csname SBIconName@roadmap\endcsname{RM}
+\expandafter\def\csname SBIconName@team\endcsname{TM}
+\expandafter\def\csname SBIconName@revenue\endcsname{REV}
+\expandafter\def\csname SBIconName@device\endcsname{HW}
+
+\newcommand{\SBIconCard}[4]{%
+  \begin{beamercolorbox}[wd=#1,ht=1.58cm,dp=0.20cm,sep=0.08cm,rounded=true,shadow=false]{sbcard}%
+    \begin{minipage}[c][1.36cm][c]{0.20\linewidth}
+      \centering
+      \SBIconFor{#2}
+    \end{minipage}%
+    \begin{minipage}[c][1.36cm][c]{0.74\linewidth}
+      {\SBFontTitle\fontsize{9.2}{11.0}\selectfont\color{SBText}#3}\par
+      \vspace{0.04cm}
+      {\SBFontBody\fontsize{7.4}{8.8}\selectfont\color{SBMuted}#4}
+    \end{minipage}
+  \end{beamercolorbox}%
+}
+
+\newcommand{\SBIconMetric}[4]{%
+  \begin{beamercolorbox}[wd=#1,ht=1.34cm,dp=0.18cm,sep=0.08cm,center,rounded=true,shadow=false]{sbmetric}%
+    \begin{minipage}[c][1.14cm][c]{0.22\linewidth}
+      \centering
+      \SBIconFor{#2}
+    \end{minipage}%
+    \begin{minipage}[c][1.14cm][c]{0.70\linewidth}
+      {\SBFontTitle\fontsize{14.2}{16.5}\selectfont\color{SBPrimary}#3}\par
+      \vspace{0.02cm}
+      {\SBFontBody\fontsize{6.9}{8.3}\selectfont\color{SBMuted}#4}
+    \end{minipage}
+  \end{beamercolorbox}%
+}
+
+\newcommand{\SBIconLabel}[2]{%
+  \begin{minipage}[c]{1.18cm}
+    \centering
+    \SBIconFor{#1}\par
+    \vspace{0.03cm}
+    {\SBFontBody\fontsize{6.8}{8.2}\selectfont\color{SBMuted}#2}
+  \end{minipage}
+}
