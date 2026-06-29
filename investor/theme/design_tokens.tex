@@ -1,0 +1,44 @@
+\ProvidesFile{design_tokens.tex}[2026/06/29 SmartDeck design tokens]
+
+% ------------------------------------------------------------
+% SmartDeck Design Tokens
+% Single source of truth for spacing, grid, cards and typography.
+% ------------------------------------------------------------
+
+% Canvas / safe area
+\newlength{\SBPageMarginX}\setlength{\SBPageMarginX}{0.82cm}
+\newlength{\SBTitleY}\setlength{\SBTitleY}{0.42cm}
+\newlength{\SBContentY}\setlength{\SBContentY}{1.42cm}
+\newlength{\SBFooterY}\setlength{\SBFooterY}{8.22cm}
+\newlength{\SBSafeWidth}\setlength{\SBSafeWidth}{14.36cm}
+
+% Grid / spacing
+\newlength{\SBGapXS}\setlength{\SBGapXS}{0.10cm}
+\newlength{\SBGapS}\setlength{\SBGapS}{0.18cm}
+\newlength{\SBGapM}\setlength{\SBGapM}{0.28cm}
+\newlength{\SBGapL}\setlength{\SBGapL}{0.42cm}
+\newlength{\SBGapXL}\setlength{\SBGapXL}{0.62cm}
+
+% Component heights
+\newlength{\SBCardH}\setlength{\SBCardH}{1.52cm}
+\newlength{\SBMetricH}\setlength{\SBMetricH}{1.18cm}
+\newlength{\SBPlatformH}\setlength{\SBPlatformH}{1.38cm}
+\newlength{\SBLineH}\setlength{\SBLineH}{0.50cm}
+\newlength{\SBTimelineH}\setlength{\SBTimelineH}{1.00cm}
+
+% Internal text boxes
+\newlength{\SBCardInnerH}\setlength{\SBCardInnerH}{1.28cm}
+\newlength{\SBMetricInnerH}\setlength{\SBMetricInnerH}{1.02cm}
+\newlength{\SBPlatformInnerH}\setlength{\SBPlatformInnerH}{1.16cm}
+\newlength{\SBTimelineInnerH}\setlength{\SBTimelineInnerH}{0.86cm}
+
+% Border / rule
+\newlength{\SBDividerW}\setlength{\SBDividerW}{2.25cm}
+\newlength{\SBDividerH}\setlength{\SBDividerH}{1.3pt}
+
+% Semantic aliases for design usage.
+\newcommand{\SBColorPrimary}{SBPrimary}
+\newcommand{\SBColorText}{SBText}
+\newcommand{\SBColorMuted}{SBMuted}
+\newcommand{\SBColorBorder}{SBLine}
+\newcommand{\SBColorSurface}{SBLight}

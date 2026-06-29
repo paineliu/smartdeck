@@ -1,0 +1,18 @@
+\ProvidesFile{icons.tex}[2026/06/29 SmartDeck lightweight icon tokens]
+
+% Text-based icon tokens. They keep the deck self-contained and compile everywhere.
+% v5.2 can replace these with SVG/Lucide assets without changing page code.
+\newcommand{\SBIconAI}{AI}
+\newcommand{\SBIconLanguage}{LI}
+\newcommand{\SBIconSearch}{S}
+\newcommand{\SBIconData}{D}
+\newcommand{\SBIconCloud}{C}
+\newcommand{\SBIconDevice}{HW}
+\newcommand{\SBIconEducation}{EDU}
+\newcommand{\SBIconEnterprise}{B2B}
+
+\newcommand{\SBIconBadge}[2]{%
+  \begin{beamercolorbox}[wd=0.72cm,ht=0.36cm,dp=0.07cm,sep=0.02cm,center,rounded=true,shadow=false]{sbmetric}%
+    {\SBFontTitle\fontsize{6.5}{7.5}\selectfont\color{SBPrimary}#2}
+  \end{beamercolorbox}%
+}

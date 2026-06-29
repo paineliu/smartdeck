@@ -1,5 +1,14 @@
 # Changelog
 
+## v5.1.0
+
+- Added `theme/design_tokens.tex` as the single source of truth for layout, spacing and component dimensions.
+- Refactored `layout.tex` to use fixed design-token coordinates.
+- Refactored `components.tex` to vertically center card, metric, platform and timeline text.
+- Added SmartDeck component aliases: `\SmartCard`, `\SmartMetric`, `\SmartPlatformCard`, `\SmartTimelineBox`.
+- Added `theme/icons.tex` as a lightweight icon-token layer for the future icon-library upgrade.
+- Kept existing slide content unchanged; this release focuses on Design System stability.
+
 ## v5.0.0
 
 - Upgraded deck to Investor Ready structure.
