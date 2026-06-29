@@ -1,0 +1,1 @@
+Example keynote template placeholder.

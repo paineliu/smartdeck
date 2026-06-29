@@ -1,8 +1,9 @@
 # Changelog
 
-## v1.0.0
+## v2.0.0
 
-- Rebuilt SmartDeck from scratch with a stable Beamer architecture.
-- Removed complex TikZ layouts to improve cross-platform compilation stability.
-- Added 17-slide investor deck for SmartBloom AI.
-- Added reusable theme components and GitHub Actions build workflow.
+- Rebuild SmartDeck as a reusable Beamer framework.
+- Add stable component system based on Beamer boxes and tcolorbox.
+- Avoid complex per-slide TikZ diagrams for better portability.
+- Add full 18-page investor deck draft.
+- Add GitHub Actions build workflow.

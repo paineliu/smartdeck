@@ -1,26 +1,38 @@
 \setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{headline}{}
 \setbeamertemplate{footline}{}
-\setbeamertemplate{frametitle}{}
-\setbeamersize{text margin left=0.82cm,text margin right=0.82cm}
+\setbeamertemplate{headline}{}
+\setlength{\tabcolsep}{3pt}
 
-\newcommand{\SBFrameTitle}[1]{%
-  \vspace{0.38cm}%
-  {\color{SBText}\sbTitleFont\fontsize{27}{31}\selectfont #1}\par
-  \vspace{0.11cm}%
-  {\color{SBBlue}\rule{2.42cm}{1.3pt}}\par
-  \vspace{0.34cm}%
+\newlength{\SBMargin}
+\setlength{\SBMargin}{0.86cm}
+
+\newcommand{\SBTitle}[1]{%
+  {\SBFontTitle\color{SBText}\fontsize{28}{33}\selectfont #1}\par
+  \vspace{0.12cm}
+  {\color{SBPrimary}\rule{2.55cm}{1.2pt}}\par
+  \vspace{0.38cm}
+}
+
+\newcommand{\SBSubtitle}[1]{%
+  {\SBFontBody\color{SBMuted}\fontsize{13.5}{18.5}\selectfont #1}\par\vspace{0.30cm}
 }
 
 \newcommand{\SBStatement}[1]{%
-  {\color{SBText}\sbTitleFont\fontsize{22}{28}\selectfont #1}\par
-}
-
-\newcommand{\SBSubText}[1]{%
-  {\color{SBMuted}\sbBodyFont\fontsize{12.8}{17}\selectfont #1}\par
+  {\SBFontTitle\color{SBText}\fontsize{22}{28}\selectfont #1}\par
 }
 
 \newcommand{\SBFooter}[1]{%
   \vfill
-  {\color{SBGray}\sbBodyFont\fontsize{7.8}{10}\selectfont SmartBloom AI \hfill #1}\vspace{0.16cm}
+  {\color{SBGray}\fontsize{8.2}{10}\selectfont SmartBloom AI \hfill #1}\par
+}
+
+\newcommand{\SBHeader}[2]{%
+  \vspace*{0.52cm}
+  \hspace*{0.72cm}\begin{minipage}{14.4cm}
+  \SBTitle{#1}
+  \SBSubtitle{#2}
+}
+
+\newcommand{\SBEndSlide}{%
+  \end{minipage}
 }

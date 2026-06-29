@@ -1,67 +1,64 @@
-\newcommand{\SBCard}[3]{%
-  \begingroup
-  \setlength{\fboxrule}{0.45pt}%
-  \setlength{\fboxsep}{6pt}%
-  \fcolorbox{SBLine}{SBLight}{%
-    \begin{minipage}[t]{#1}
-      {\color{SBBlue}\sbTitleFont\fontsize{11.2}{13.5}\selectfont #2}\par\vspace{2pt}
-      {\color{SBMuted}\sbBodyFont\fontsize{8.7}{11.2}\selectfont #3}
-    \end{minipage}}
-  \endgroup
-}
-
-\newcommand{\SBWideCard}[3]{%
-  \begingroup
-  \setlength{\fboxrule}{0.45pt}%
-  \setlength{\fboxsep}{8pt}%
-  \fcolorbox{SBLine}{SBLight}{%
-    \begin{minipage}[t]{#1}
-      {\color{SBBlue}\sbTitleFont\fontsize{13.0}{16}\selectfont #2}\par\vspace{3pt}
-      {\color{SBMuted}\sbBodyFont\fontsize{10.2}{13.5}\selectfont #3}
-    \end{minipage}}
-  \endgroup
+\tcbset{
+  sbbase/.style={
+    enhanced,
+    boxrule=0.7pt,
+    arc=3mm,
+    left=2.4mm,right=2.4mm,top=2.2mm,bottom=2.2mm,
+    colback=white,
+    colframe=SBBorder,
+    boxsep=0pt,
+    sharp corners=downhill
+  }
 }
 
 \newcommand{\SBMetric}[2]{%
-  \begin{minipage}[t]{0.23\textwidth}
-    \centering
-    {\color{SBBlue}\sbTitleFont\fontsize{25}{29}\selectfont #1}\par\vspace{1pt}
-    {\color{SBMuted}\sbBodyFont\fontsize{8.5}{10.5}\selectfont #2}
-  \end{minipage}%
+\begin{tcolorbox}[sbbase,width=2.55cm,height=1.70cm,valign=center,halign=center]
+{\SBFontTitle\color{SBPrimary}\fontsize{25}{29}\selectfont #1}\par\vspace{0.04cm}
+{\SBFontBody\color{SBMuted}\fontsize{8.7}{11}\selectfont #2}
+\end{tcolorbox}%
 }
 
-\newcommand{\SBMetricBox}[2]{%
-  \begingroup
-  \setlength{\fboxrule}{0.45pt}%
-  \setlength{\fboxsep}{7pt}%
-  \fcolorbox{SBLine}{white}{%
-    \begin{minipage}[t]{#1}
-      \centering
-      {\color{SBBlue}\sbTitleFont\fontsize{24}{28}\selectfont #2}
-    \end{minipage}}
-  \endgroup
+\newcommand{\SBCard}[2]{%
+\begin{tcolorbox}[sbbase,width=2.72cm,height=1.45cm]
+{\SBFontTitle\color{SBText}\fontsize{11.6}{14}\selectfont #1}\par\vspace{0.05cm}
+{\SBFontBody\color{SBMuted}\fontsize{8.3}{10.8}\selectfont #2}
+\end{tcolorbox}%
 }
 
-\newcommand{\SBPill}[2]{%
-  \begingroup
-  \setlength{\fboxrule}{0pt}%
-  \setlength{\fboxsep}{4pt}%
-  \colorbox{#1}{\color{white}\sbTitleFont\fontsize{8.2}{10}\selectfont #2}%
-  \endgroup
+\newcommand{\SBFeature}[3]{%
+\begin{tcolorbox}[sbbase,width=3.05cm,height=1.38cm,colback=#1]
+{\SBFontTitle\color{SBText}\fontsize{11.4}{14}\selectfont #2}\par\vspace{0.04cm}
+{\SBFontBody\color{SBMuted}\fontsize{8.3}{10.8}\selectfont #3}
+\end{tcolorbox}%
 }
 
-\newcommand{\SBSectionLabel}[1]{%
-  {\color{SBBlue}\sbTitleFont\fontsize{9}{11}\selectfont\MakeUppercase{#1}}\par
+\newcommand{\SBQuote}[1]{%
+\begin{center}
+{\SBFontTitle\color{SBText}\fontsize{23}{29}\selectfont ``#1''}
+\end{center}
 }
 
-\newcommand{\SBBlueBox}[2]{%
-  \begingroup
-  \setlength{\fboxrule}{0.45pt}%
-  \setlength{\fboxsep}{7pt}%
-  \fcolorbox{SBBlue}{SBSoftBlue}{%
-    \begin{minipage}[t]{#1}
-      \centering
-      {\color{SBBlue}\sbTitleFont\fontsize{10.5}{13}\selectfont #2}
-    \end{minipage}}
-  \endgroup
+\newcommand{\SBSection}[2]{%
+\begin{frame}[plain]
+\vspace*{2.25cm}
+\begin{center}
+{\SBFontTitle\color{SBPrimary}\fontsize{11}{14}\selectfont #1}\par\vspace{0.25cm}
+{\SBFontTitle\color{SBText}\fontsize{34}{40}\selectfont #2}
+\end{center}
+\end{frame}
+}
+
+\newcommand{\SBTimelineItem}[2]{%
+\begin{tcolorbox}[sbbase,width=2.35cm,height=1.16cm,halign=center,valign=center]
+{\SBFontTitle\color{SBPrimary}\fontsize{13}{16}\selectfont #1}\par
+{\SBFontBody\color{SBMuted}\fontsize{8.2}{10.5}\selectfont #2}
+\end{tcolorbox}%
+}
+
+\newcommand{\SBRoadmapItem}[3]{%
+\begin{tcolorbox}[sbbase,width=3.55cm,height=1.58cm]
+{\SBFontTitle\color{SBPrimary}\fontsize{11.5}{14}\selectfont #1}\par\vspace{0.04cm}
+{\SBFontTitle\color{SBText}\fontsize{10.8}{13}\selectfont #2}\par\vspace{0.03cm}
+{\SBFontBody\color{SBMuted}\fontsize{8.2}{10.5}\selectfont #3}
+\end{tcolorbox}%
 }

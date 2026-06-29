@@ -1,6 +1,6 @@
-# Typography
+# SmartDeck Typography
 
-- English: Helvetica Neue / Helvetica / Latin Modern Sans fallback
-- Chinese: PingFang SC / Songti SC / STSong / Fandol fallback
-- Title: bold, dark, large
-- Body: high-contrast dark gray
+- Latin: Helvetica Neue / Arial / Latin Modern Sans fallback.
+- Chinese: PingFang SC / Noto Sans CJK SC / Fandol fallback.
+- Large titles, high contrast, minimal body text.
+- Avoid low-contrast gray text for investor-facing content.
