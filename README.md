@@ -39,3 +39,8 @@ investor/build/SmartBloom_AI_Investor_Deck.pdf
 ## Current Version
 
 v2.6.0 — layout polish, fixed footer, fixed-height cards.
+
+
+## Current Version
+
+v2.7.0 — unified slide lead typography and card height polish.

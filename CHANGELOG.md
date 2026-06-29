@@ -1,5 +1,28 @@
 # Changelog
 
+## v2.9.2
+
+- Removed the Knowledge Engine bottom `Powered applications` line to avoid footer overlap.
+- Redesigned Cross Platform Engine as a stable platform matrix.
+- Removed fragile platform card grid from page 11.
+- Kept global layout unchanged from the stable baseline.
+
+## v2.9.1
+
+- Based on v2.7 stable layout.
+- Fixed Knowledge Engine slide by removing the bottom product-card row that overlapped the footer.
+- Fixed Cross Platform Engine slide with absolute two-row grid layout.
+- Avoided global card-component changes to prevent layout regression.
+
+## v2.7.0
+
+- Added `\SBSlideLead{}` as the standard explanatory line component.
+- Unified the explanatory statement size across all pages.
+- Updated all slide lead statements to use the same typography.
+- Reworked card and metric components to use fixed-height inner minipages.
+- Kept footer placement stable and above the bottom edge.
+- Shortened the slide 2 LI card to avoid wrapping and improve visual balance.
+
 ## v2.6.0
 
 - Rebuilt the master layout to keep footer above the bottom edge.
