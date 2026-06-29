@@ -1,13 +1,8 @@
 # Changelog
 
-## v0.1.0
+## v1.0.0
 
-- Initialize SmartDeck repository.
-- Add investor deck Beamer project.
-- Add SmartBloom visual theme.
-- Add first 5 slides:
-  - Cover
-  - Why Now
-  - Company
-  - Language Intelligence Stack
-  - Technology Evolution
+- Rebuilt SmartDeck from scratch with a stable Beamer architecture.
+- Removed complex TikZ layouts to improve cross-platform compilation stability.
+- Added 17-slide investor deck for SmartBloom AI.
+- Added reusable theme components and GitHub Actions build workflow.

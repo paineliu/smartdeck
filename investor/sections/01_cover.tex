@@ -1,30 +1,14 @@
 \begin{frame}[plain]
-\begin{tikzpicture}[remember picture,overlay]
-  \fill[white] (current page.south west) rectangle (current page.north east);
-
-  \node[anchor=west, text=SBText, font=\sbTitleFont\fontsize{44}{50}\selectfont]
-    at ([xshift=1.05cm,yshift=1.00cm]current page.west) {SmartBloom AI};
-
-  \node[anchor=west, text=SBBlue, font=\sbTitleFont\fontsize{22}{28}\selectfont]
-    at ([xshift=1.08cm,yshift=0.20cm]current page.west) {Language Intelligence Company};
-
-  \node[anchor=west, text=SBMuted, font=\sbBodyFont\fontsize{15}{21}\selectfont]
-    at ([xshift=1.08cm,yshift=-0.48cm]current page.west)
-    {Building the Language Intelligence Infrastructure for the AI Era};
-
-  \node[anchor=west, text=SBGray, font=\sbBodyFont\fontsize{11.5}{15}\selectfont]
-    at ([xshift=1.08cm,yshift=-1.18cm]current page.west)
-    {Investor Deck \quad 2026};
-
-  \draw[SBBlue,line width=2pt]
-    ([xshift=1.08cm,yshift=-1.62cm]current page.west) --
-    ([xshift=4.50cm,yshift=-1.62cm]current page.west);
-
-  \foreach \i in {0,...,8}{
-    \draw[SBBlue!10,line width=1.1pt]
-      ([xshift=8.2cm,yshift=-3.05cm+\i*0.38cm]current page.center)
-      .. controls +(1.4,0.65) and +(-1.4,-0.65) ..
-      ([xshift=5.7cm,yshift=-3.05cm+\i*0.38cm]current page.east);
-  }
-\end{tikzpicture}
+\vspace*{1.65cm}
+{\color{SBText}\sbTitleFont\fontsize{43}{50}\selectfont SmartBloom AI}\par
+\vspace{0.32cm}
+{\color{SBBlue}\sbTitleFont\fontsize{22}{28}\selectfont Language Intelligence Company}\par
+\vspace{0.34cm}
+{\color{SBMuted}\sbBodyFont\fontsize{14.5}{20}\selectfont Building the Language Intelligence Infrastructure for the AI Era}\par
+\vspace{0.72cm}
+{\color{SBGray}\sbBodyFont\fontsize{11}{15}\selectfont Investor Deck \quad 2026}\par
+\vspace{0.36cm}
+{\color{SBBlue}\rule{3.8cm}{1.7pt}}\par
+\vfill
+{\color{SBGray}\sbBodyFont\fontsize{8.5}{11}\selectfont Confidential}
 \end{frame}

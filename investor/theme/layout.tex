@@ -1,44 +1,26 @@
 \setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{footline}{}
 \setbeamertemplate{headline}{}
+\setbeamertemplate{footline}{}
+\setbeamertemplate{frametitle}{}
+\setbeamersize{text margin left=0.82cm,text margin right=0.82cm}
 
-\newlength{\SBLeft}
-\newlength{\SBRight}
-\newlength{\SBTop}
-\newlength{\SBBottom}
-\setlength{\SBLeft}{0.86cm}
-\setlength{\SBRight}{0.86cm}
-\setlength{\SBTop}{0.58cm}
-\setlength{\SBBottom}{0.52cm}
-
-\newcommand{\SBPageTitle}[1]{%
-  \begin{tikzpicture}[remember picture,overlay]
-    \node[anchor=north west, text=SBText, font=\sbTitleFont\fontsize{27}{31}\selectfont]
-      at ([xshift=\SBLeft,yshift=-0.55cm]current page.north west) {#1};
-    \draw[SBBlue,line width=1.4pt]
-      ([xshift=\SBLeft,yshift=-1.16cm]current page.north west) --
-      ([xshift=3.35cm,yshift=-1.16cm]current page.north west);
-  \end{tikzpicture}
-  \vspace{1.15cm}
-}
-
-\newcommand{\SBKicker}[1]{%
-  {\color{SBBlue}\sbTitleFont\fontsize{10}{13}\selectfont\MakeUppercase{#1}}
+\newcommand{\SBFrameTitle}[1]{%
+  \vspace{0.38cm}%
+  {\color{SBText}\sbTitleFont\fontsize{27}{31}\selectfont #1}\par
+  \vspace{0.11cm}%
+  {\color{SBBlue}\rule{2.42cm}{1.3pt}}\par
+  \vspace{0.34cm}%
 }
 
 \newcommand{\SBStatement}[1]{%
-  {\color{SBText}\sbTitleFont\fontsize{23}{29}\selectfont #1}
+  {\color{SBText}\sbTitleFont\fontsize{22}{28}\selectfont #1}\par
 }
 
 \newcommand{\SBSubText}[1]{%
-  {\color{SBMuted}\sbBodyFont\fontsize{13.6}{18.6}\selectfont #1}
+  {\color{SBMuted}\sbBodyFont\fontsize{12.8}{17}\selectfont #1}\par
 }
 
 \newcommand{\SBFooter}[1]{%
-  \begin{tikzpicture}[remember picture,overlay]
-    \node[anchor=south west, text=SBGray, font=\sbBodyFont\fontsize{8.5}{11}\selectfont]
-      at ([xshift=\SBLeft,yshift=0.25cm]current page.south west) {SmartBloom AI};
-    \node[anchor=south east, text=SBGray, font=\sbBodyFont\fontsize{8.5}{11}\selectfont]
-      at ([xshift=-\SBRight,yshift=0.25cm]current page.south east) {#1};
-  \end{tikzpicture}
+  \vfill
+  {\color{SBGray}\sbBodyFont\fontsize{7.8}{10}\selectfont SmartBloom AI \hfill #1}\vspace{0.16cm}
 }

@@ -1,18 +1,6 @@
 \mode<presentation>
-
 \setbeamercolor{normal text}{fg=SBText,bg=white}
 \setbeamercolor{structure}{fg=SBBlue}
-\setbeamercolor{frametitle}{fg=SBText,bg=white}
-\setbeamerfont{frametitle}{series=\bfseries,size=\Large}
-
-\setbeamertemplate{background canvas}{%
-  \begin{tikzpicture}[remember picture,overlay]
-    \fill[white] (current page.south west) rectangle (current page.north east);
-  \end{tikzpicture}
-}
-
-\setbeamertemplate{frametitle}{}
-\setbeamertemplate{itemize item}{\color{SBBlue}\small$\bullet$}
-\setbeamertemplate{itemize subitem}{\color{SBTeal}\tiny$\bullet$}
-
+\setbeamerfont{normal text}{family=\sffamily}
+\setbeamertemplate{background canvas}{\color{white}\rule{\paperwidth}{\paperheight}}
 \mode<all>

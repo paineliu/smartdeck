@@ -1,40 +1,54 @@
 \defaultfontfeatures{Ligatures=TeX}
 
-% macOS-first font settings.
-% Avoid Inter dependency for clean local compilation.
-\IfFontExistsTF{Helvetica Neue}{
-  \setmainfont{Helvetica Neue}
-  \setsansfont{Helvetica Neue}
+% Robust Latin font fallback chain for macOS, Linux and GitHub Actions.
+\IfFontExistsTF{Inter}{
+  \setmainfont{Inter}
+  \setsansfont{Inter}
 }{
-  \IfFontExistsTF{Helvetica}{
-    \setmainfont{Helvetica}
-    \setsansfont{Helvetica}
+  \IfFontExistsTF{Inter Display}{
+    \setmainfont{Inter Display}
+    \setsansfont{Inter Display}
   }{
-    \IfFontExistsTF{Arial}{
-      \setmainfont{Arial}
-      \setsansfont{Arial}
+    \IfFontExistsTF{Helvetica Neue}{
+      \setmainfont{Helvetica Neue}
+      \setsansfont{Helvetica Neue}
     }{
-      \setmainfont{Latin Modern Sans}
-      \setsansfont{Latin Modern Sans}
+      \IfFontExistsTF{Noto Sans}{
+        \setmainfont{Noto Sans}
+        \setsansfont{Noto Sans}
+      }{
+        \IfFontExistsTF{TeX Gyre Heros}{
+          \setmainfont{TeX Gyre Heros}
+          \setsansfont{TeX Gyre Heros}
+        }{
+          \setmainfont{Lato}
+          \setsansfont{Lato}
+        }
+      }
     }
   }
 }
 
-% Chinese font fallback chain.
+% Robust Chinese font fallback chain.
 \IfFontExistsTF{PingFang SC}{
   \setCJKmainfont{PingFang SC}
   \setCJKsansfont{PingFang SC}
 }{
-  \IfFontExistsTF{Songti SC}{
-    \setCJKmainfont{Songti SC}
-    \setCJKsansfont{Songti SC}
+  \IfFontExistsTF{Noto Sans CJK SC}{
+    \setCJKmainfont{Noto Sans CJK SC}
+    \setCJKsansfont{Noto Sans CJK SC}
   }{
-    \IfFontExistsTF{STSong}{
-      \setCJKmainfont{STSong}
-      \setCJKsansfont{STSong}
+    \IfFontExistsTF{Source Han Sans SC}{
+      \setCJKmainfont{Source Han Sans SC}
+      \setCJKsansfont{Source Han Sans SC}
     }{
-      \setCJKmainfont{FandolSong-Regular}
-      \setCJKsansfont{FandolHei-Regular}
+      \IfFontExistsTF{Songti SC}{
+        \setCJKmainfont{Songti SC}
+        \setCJKsansfont{Songti SC}
+      }{
+        \setCJKmainfont{FandolHei-Regular}
+        \setCJKsansfont{FandolHei-Regular}
+      }
     }
   }
 }

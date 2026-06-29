@@ -1,9 +1,6 @@
 # Typography
 
-Recommended visual style:
-
-- English: Inter / Helvetica Neue
-- Chinese: PingFang SC / Noto Sans CJK SC
-- Title: bold, large, high contrast
-- Body: regular, dark gray
-- Avoid low-contrast gray text in investor-facing pages.
+- English: Helvetica Neue / Helvetica / Latin Modern Sans fallback
+- Chinese: PingFang SC / Songti SC / STSong / Fandol fallback
+- Title: bold, dark, large
+- Body: high-contrast dark gray

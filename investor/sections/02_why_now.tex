@@ -1,37 +1,16 @@
 \begin{frame}[plain]
-\SBPageTitle{Why Now}
-
-\vspace{0.2cm}
-\begin{center}
+\SBFrameTitle{Why Now}
+\centering
 \SBStatement{Every computing revolution begins with a new language interface.}
-\end{center}
-
-\vspace{0.55cm}
-
-\begin{center}
-\begin{tikzpicture}[
-  stage/.style={draw=SBLine, rounded corners=9pt, fill=white, minimum width=1.92cm, minimum height=0.78cm, align=center, font=\sbTitleFont\fontsize{9.5}{12}\selectfont, text=SBText},
-  final/.style={draw=SBBlue, rounded corners=9pt, fill=SBSoftBlue, line width=1.1pt, minimum width=2.45cm, minimum height=0.78cm, align=center, font=\sbTitleFont\fontsize{9.5}{12}\selectfont, text=SBBlue},
-  arrow/.style={->, line width=1.15pt, draw=SBBlue, >=Stealth}
-]
-\node[stage] (paper) {Paper};
-\node[stage, right=0.42cm of paper] (keyboard) {Keyboard};
-\node[stage, right=0.42cm of keyboard] (touch) {Touch};
-\node[stage, right=0.42cm of touch] (ai) {AI};
-\node[final, right=0.42cm of ai] (li) {Language\\Intelligence};
-
-\draw[arrow] (paper) -- (keyboard);
-\draw[arrow] (keyboard) -- (touch);
-\draw[arrow] (touch) -- (ai);
-\draw[arrow] (ai) -- (li);
-\end{tikzpicture}
-\end{center}
-
-\vspace{0.55cm}
-
-\begin{center}
+\vspace{0.75cm}
+\SBBlueBox{1.55cm}{Paper}\hspace{0.22cm}
+\SBBlueBox{1.80cm}{Keyboard}\hspace{0.22cm}
+\SBBlueBox{1.55cm}{Touch}\hspace{0.22cm}
+\SBBlueBox{1.35cm}{AI}\hspace{0.22cm}
+\SBBlueBox{2.35cm}{Language Intelligence}
+\vspace{0.75cm}
+\begin{minipage}{0.74\textwidth}\centering
 \SBSubText{AI understands language. Humans need better ways to express, search, learn and interact with it.}
-\end{center}
-
+\end{minipage}
 \SBFooter{Why Now}
 \end{frame}

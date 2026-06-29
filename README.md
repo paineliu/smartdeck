@@ -14,17 +14,6 @@ Build the Language Intelligence Infrastructure for the AI Era.
 
 Empowering Every Language Expression.
 
-## Repository Structure
-
-```text
-smartdeck/
-├── investor/      Investor Deck, Beamer source and theme
-├── company/       Company profile materials
-├── assets/        Shared logos, screenshots, diagrams and images
-├── brand/         Brand guideline files
-└── .github/       GitHub Actions workflows
-```
-
 ## Build Investor Deck
 
 ```bash
@@ -32,7 +21,7 @@ cd investor
 make
 ```
 
-The generated PDF will be placed at:
+Output:
 
 ```text
 investor/build/SmartBloom_AI_Investor_Deck.pdf

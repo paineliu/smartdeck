@@ -1,56 +1,67 @@
+\newcommand{\SBCard}[3]{%
+  \begingroup
+  \setlength{\fboxrule}{0.45pt}%
+  \setlength{\fboxsep}{6pt}%
+  \fcolorbox{SBLine}{SBLight}{%
+    \begin{minipage}[t]{#1}
+      {\color{SBBlue}\sbTitleFont\fontsize{11.2}{13.5}\selectfont #2}\par\vspace{2pt}
+      {\color{SBMuted}\sbBodyFont\fontsize{8.7}{11.2}\selectfont #3}
+    \end{minipage}}
+  \endgroup
+}
+
+\newcommand{\SBWideCard}[3]{%
+  \begingroup
+  \setlength{\fboxrule}{0.45pt}%
+  \setlength{\fboxsep}{8pt}%
+  \fcolorbox{SBLine}{SBLight}{%
+    \begin{minipage}[t]{#1}
+      {\color{SBBlue}\sbTitleFont\fontsize{13.0}{16}\selectfont #2}\par\vspace{3pt}
+      {\color{SBMuted}\sbBodyFont\fontsize{10.2}{13.5}\selectfont #3}
+    \end{minipage}}
+  \endgroup
+}
+
 \newcommand{\SBMetric}[2]{%
-  \begin{tikzpicture}
-    \node[align=center] {
-      {\color{SBBlue}\sbTitleFont\fontsize{32}{36}\selectfont #1}\\[-1pt]
-      {\color{SBMuted}\sbBodyFont\fontsize{10.5}{13}\selectfont #2}
-    };
-  \end{tikzpicture}
+  \begin{minipage}[t]{0.23\textwidth}
+    \centering
+    {\color{SBBlue}\sbTitleFont\fontsize{25}{29}\selectfont #1}\par\vspace{1pt}
+    {\color{SBMuted}\sbBodyFont\fontsize{8.5}{10.5}\selectfont #2}
+  \end{minipage}%
 }
 
-\newcommand{\SBCard}[4]{%
-  \begin{tikzpicture}
-    \node[
-      draw=SBLine,
-      rounded corners=10pt,
-      line width=0.85pt,
-      fill=white,
-      minimum width=#1,
-      minimum height=#2,
-      align=left,
-      inner sep=12pt
-    ] {
-      {\color{SBBlue}\sbTitleFont\fontsize{14}{17}\selectfont #3}\\[4pt]
-      {\color{SBMuted}\sbBodyFont\fontsize{10.2}{13.5}\selectfont #4}
-    };
-  \end{tikzpicture}
+\newcommand{\SBMetricBox}[2]{%
+  \begingroup
+  \setlength{\fboxrule}{0.45pt}%
+  \setlength{\fboxsep}{7pt}%
+  \fcolorbox{SBLine}{white}{%
+    \begin{minipage}[t]{#1}
+      \centering
+      {\color{SBBlue}\sbTitleFont\fontsize{24}{28}\selectfont #2}
+    \end{minipage}}
+  \endgroup
 }
 
-\newcommand{\SBTechCard}[3]{%
-  \begin{tikzpicture}
-    \node[
-      draw=SBLine,
-      rounded corners=10pt,
-      line width=0.85pt,
-      fill=SBLight,
-      minimum width=4.05cm,
-      minimum height=1.38cm,
-      align=left,
-      inner sep=10pt
-    ] {
-      {\color{SBText}\sbTitleFont\fontsize{13}{16}\selectfont #1}\\[3pt]
-      {\color{SBGray}\sbBodyFont\fontsize{9.4}{12}\selectfont #2}\\[2pt]
-      {\color{SBBlue}\sbTitleFont\fontsize{8.5}{11}\selectfont #3}
-    };
-  \end{tikzpicture}
+\newcommand{\SBPill}[2]{%
+  \begingroup
+  \setlength{\fboxrule}{0pt}%
+  \setlength{\fboxsep}{4pt}%
+  \colorbox{#1}{\color{white}\sbTitleFont\fontsize{8.2}{10}\selectfont #2}%
+  \endgroup
 }
 
-\newcommand{\SBTinyPill}[2]{%
-  \tikz[baseline=(x.base)] \node[
-    rounded corners=7pt,
-    fill=#1,
-    inner xsep=8pt,
-    inner ysep=3pt,
-    text=white,
-    font=\sbTitleFont\fontsize{8}{10}\selectfont
-  ] (x) {#2};
+\newcommand{\SBSectionLabel}[1]{%
+  {\color{SBBlue}\sbTitleFont\fontsize{9}{11}\selectfont\MakeUppercase{#1}}\par
+}
+
+\newcommand{\SBBlueBox}[2]{%
+  \begingroup
+  \setlength{\fboxrule}{0.45pt}%
+  \setlength{\fboxsep}{7pt}%
+  \fcolorbox{SBBlue}{SBSoftBlue}{%
+    \begin{minipage}[t]{#1}
+      \centering
+      {\color{SBBlue}\sbTitleFont\fontsize{10.5}{13}\selectfont #2}
+    \end{minipage}}
+  \endgroup
 }
