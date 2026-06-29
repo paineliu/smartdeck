@@ -1,5 +1,13 @@
 # Changelog
 
+## v3.3.0
+
+- Added investor-deck pages: Traction, Technology Moat, Founder, Vision & Roadmap, and Closing.
+- Added conservative statistic and timeline components for stable Beamer rendering.
+- Shortened the Market Opportunity center node text to avoid overlap.
+- Replaced the old closing page with a stronger investor-style closing message.
+- Compiled and checked the deck with no Overfull/Underfull warnings.
+
 ## v3.2.0
 
 - Added Market Opportunity slide.

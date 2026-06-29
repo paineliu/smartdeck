@@ -49,3 +49,8 @@ v2.7.0 — unified slide lead typography and card height polish.
 ## Current Version
 
 v3.2.0 - business story expansion with Market, Product Matrix, Business Model and Competitive Advantage.
+
+
+## Current Version
+
+v3.3.0 - Investor Deck upgrade with Traction, Moat, Founder, Roadmap and Closing pages.

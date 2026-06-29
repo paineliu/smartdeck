@@ -110,3 +110,34 @@
     \end{minipage}
   \end{beamercolorbox}%
 }
+
+
+% v3.3 investor-deck components. Conservative fixed-size boxes.
+\newcommand{\SBStatCard}[3]{%
+  \begin{beamercolorbox}[wd=#1,ht=1.18cm,dp=0.18cm,sep=0.08cm,center,rounded=true,shadow=false]{sbmetric}%
+    \begin{minipage}[c][1.02cm][c]{0.90\linewidth}
+      \centering
+      {\SBFontTitle\fontsize{17.2}{20}\selectfont\color{SBPrimary}#2}\par
+      \vspace{0.03cm}
+      {\SBFontBody\fontsize{7.4}{9.0}\selectfont\color{SBMuted}#3}
+    \end{minipage}
+  \end{beamercolorbox}%
+}
+
+\newcommand{\SBMoatLine}[2]{%
+  \begin{beamercolorbox}[wd=5.5cm,ht=0.52cm,dp=0.10cm,sep=0.08cm,rounded=true]{sbline}%
+    {\SBFontTitle\fontsize{8.8}{10.6}\selectfont\color{SBText}#1}\hfill
+    {\SBFontBody\fontsize{7.2}{8.8}\selectfont\color{SBGray}#2}
+  \end{beamercolorbox}\vspace{0.06cm}%
+}
+
+\newcommand{\SBTimelineBox}[3]{%
+  \begin{beamercolorbox}[wd=#1,ht=1.00cm,dp=0.14cm,sep=0.08cm,center,rounded=true,shadow=false]{sbcard}%
+    \begin{minipage}[c][0.86cm][c]{0.92\linewidth}
+      \centering
+      {\SBFontTitle\fontsize{8.8}{10.6}\selectfont\color{SBText}#2}\par
+      \vspace{0.03cm}
+      {\SBFontBody\fontsize{7.2}{8.8}\selectfont\color{SBMuted}#3}
+    \end{minipage}
+  \end{beamercolorbox}%
+}
