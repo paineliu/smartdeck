@@ -1,16 +1,16 @@
 \newcommand{\SBCard}[3]{%
-  \begin{beamercolorbox}[wd=#1,sep=0.15cm,rounded=true,shadow=false]{sbcard}%
-    {\SBFontTitle\fontsize{11.2}{14}\selectfont\color{SBText}#2}\par
-    \vspace{0.06cm}
-    {\SBFontBody\fontsize{9.0}{12}\selectfont\color{SBMuted}#3}
+  \begin{beamercolorbox}[wd=#1,ht=1.38cm,dp=0.30cm,sep=0.14cm,center,rounded=true,shadow=false]{sbcard}%
+    {\SBFontTitle\fontsize{10.9}{13.0}\selectfont\color{SBText}#2}\par
+    \vspace{0.07cm}
+    {\SBFontBody\fontsize{8.7}{10.6}\selectfont\color{SBMuted}#3}
   \end{beamercolorbox}%
 }
 
 \newcommand{\SBMetric}[3]{%
-  \begin{beamercolorbox}[wd=#1,sep=0.12cm,center,rounded=true,shadow=false]{sbmetric}%
-    {\SBFontTitle\fontsize{20}{24}\selectfont\color{SBPrimary}#2}\par
+  \begin{beamercolorbox}[wd=#1,ht=1.18cm,dp=0.25cm,sep=0.10cm,center,rounded=true,shadow=false]{sbmetric}%
+    {\SBFontTitle\fontsize{19}{22}\selectfont\color{SBPrimary}#2}\par
     \vspace{0.03cm}
-    {\SBFontBody\fontsize{8.7}{11}\selectfont\color{SBMuted}#3}
+    {\SBFontBody\fontsize{8.4}{10.6}\selectfont\color{SBMuted}#3}
   \end{beamercolorbox}%
 }
 
@@ -18,10 +18,9 @@
   \colorbox{#1}{\strut\hspace{0.16cm}{\color{white}\SBFontTitle\fontsize{8.5}{11}\selectfont #2}\hspace{0.16cm}}%
 }
 
+% A plain centered statement, without background box, for visual consistency.
 \newcommand{\SBQuote}[1]{%
-  \begin{beamercolorbox}[wd=0.86\textwidth,sep=0.20cm,center,rounded=true]{sbquote}%
-    {\SBFontTitle\fontsize{17}{22}\selectfont\color{SBText}#1}
-  \end{beamercolorbox}%
+  {\SBLeadText{#1}}%
 }
 
 \newcommand{\SBThreeCards}[6]{%
@@ -42,8 +41,8 @@
 }
 
 \newcommand{\SBStackLine}[2]{%
-  \begin{beamercolorbox}[wd=\linewidth,sep=0.10cm,rounded=true]{sbline}%
-    {\SBFontTitle\fontsize{10.2}{13}\selectfont\color{SBText}#1}\hfill
-    {\SBFontBody\fontsize{8.5}{11}\selectfont\color{SBGray}#2}
+  \begin{beamercolorbox}[wd=\linewidth,ht=0.52cm,dp=0.11cm,sep=0.09cm,rounded=true]{sbline}%
+    {\SBFontTitle\fontsize{10.0}{12.5}\selectfont\color{SBText}#1}\hfill
+    {\SBFontBody\fontsize{8.3}{10.6}\selectfont\color{SBGray}#2}
   \end{beamercolorbox}\vspace{0.07cm}%
 }

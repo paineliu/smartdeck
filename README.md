@@ -34,3 +34,8 @@ investor/build/SmartBloom_AI_Investor_Deck.pdf
 - Minimal TikZ dependency.
 - Safe-area based layouts.
 - No intentional overfull page design.
+
+
+## Current Version
+
+v2.6.0 — layout polish, fixed footer, fixed-height cards.

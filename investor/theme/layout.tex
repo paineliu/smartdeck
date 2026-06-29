@@ -3,22 +3,32 @@
 \setbeamertemplate{footline}{}
 \setbeamersize{text margin left=0.82cm,text margin right=0.82cm}
 
+% Master coordinates for 16:9 Beamer.
+% Footer is fixed and intentionally kept above the bottom edge.
+\newcommand{\SBFixedFooter}{%
+  \begin{textblock*}{14.36cm}(0.82cm,8.32cm)
+    {\SBCaptionText{SmartBloom AI Confidential \hfill Investor Deck 2026}}
+  \end{textblock*}
+}
+
+% Standard slide: fixed title baseline, fixed blue rule, fixed content start.
 \newcommand{\SBPage}[2]{%
   \begin{frame}[plain]
-  \vspace*{0.36cm}
-  \noindent\SBHeadline{#1}\par
-  \vspace{0.08cm}
-  {\color{SBPrimary}\rule{2.25cm}{1.3pt}}\par
-  \vspace{0.25cm}
-  #2
-  \vspace{0.08cm}
-  \SBCaptionText{SmartBloom AI \hfill Confidential}
+  \begin{textblock*}{14.36cm}(0.82cm,0.42cm)
+    \SBHeadline{#1}\par
+    \vspace{0.08cm}
+    {\color{SBPrimary}\rule{2.25cm}{1.3pt}}
+  \end{textblock*}
+  \begin{textblock*}{14.36cm}(0.82cm,1.42cm)
+    #2
+  \end{textblock*}
+  \SBFixedFooter
   \end{frame}
 }
 
 \newcommand{\SBSectionPage}[2]{%
   \begin{frame}[plain]
-  \vfill
+  \begin{textblock*}{14.36cm}(0.82cm,2.60cm)
   \begin{center}
   \SBKickerText{SmartDeck}\par
   \vspace{0.35cm}
@@ -26,6 +36,7 @@
   \vspace{0.25cm}
   \SBSubtitleText{#2}
   \end{center}
-  \vfill
+  \end{textblock*}
+  \SBFixedFooter
   \end{frame}
 }
