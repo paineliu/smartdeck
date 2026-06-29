@@ -1,5 +1,14 @@
 # Changelog
 
+## v5.0.0
+
+- Upgraded deck to Investor Ready structure.
+- Added Competitive Landscape page.
+- Added Team page focused on founder/product/AI credibility.
+- Added Appendix Assets page for follow-up evidence and demos.
+- Reworked final closing page with a stronger investor-facing message.
+- Kept the v4.0 business story intact while adding investor proof layers.
+
 ## v4.0.0
 
 - Added investor business section before the closing slide.

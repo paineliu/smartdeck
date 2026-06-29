@@ -27,7 +27,7 @@ Output:
 investor/build/SmartBloom_AI_Investor_Deck.pdf
 ```
 
-## v2.1 Focus
+## v5.0.0 Focus
 
 - Stable Beamer framework.
 - Typography and spacing tokens.
@@ -38,19 +38,19 @@ investor/build/SmartBloom_AI_Investor_Deck.pdf
 
 ## Current Version
 
-v2.6.0 — layout polish, fixed footer, fixed-height cards.
+v5.0.0 — layout polish, fixed footer, fixed-height cards.
 
 
 ## Current Version
 
-v2.7.0 — unified slide lead typography and card height polish.
+v5.0.0 — unified slide lead typography and card height polish.
 
 
 ## Current Version
 
-v3.2.0 - business story expansion with Market, Product Matrix, Business Model and Competitive Advantage.
+v5.0.0 - business story expansion with Market, Product Matrix, Business Model and Competitive Advantage.
 
 
 ## Current Version
 
-v3.3.0 - Investor Deck upgrade with Traction, Moat, Founder, Roadmap and Closing pages.
+v5.0.0 - Investor Deck upgrade with Traction, Moat, Founder, Roadmap and Closing pages.
