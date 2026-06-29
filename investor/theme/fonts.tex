@@ -1,17 +1,18 @@
 \defaultfontfeatures{Ligatures=TeX}
 
-% macOS-first fallback chain.
-\IfFontExistsTF{Inter}{
-  \setmainfont{Inter}
-  \setsansfont{Inter}
+% macOS-first font settings.
+% Avoid Inter dependency for clean local compilation.
+\IfFontExistsTF{Helvetica Neue}{
+  \setmainfont{Helvetica Neue}
+  \setsansfont{Helvetica Neue}
 }{
-  \IfFontExistsTF{Helvetica Neue}{
-    \setmainfont{Helvetica Neue}
-    \setsansfont{Helvetica Neue}
+  \IfFontExistsTF{Helvetica}{
+    \setmainfont{Helvetica}
+    \setsansfont{Helvetica}
   }{
-    \IfFontExistsTF{Helvetica}{
-      \setmainfont{Helvetica}
-      \setsansfont{Helvetica}
+    \IfFontExistsTF{Arial}{
+      \setmainfont{Arial}
+      \setsansfont{Arial}
     }{
       \setmainfont{Latin Modern Sans}
       \setsansfont{Latin Modern Sans}
@@ -19,17 +20,18 @@
   }
 }
 
+% Chinese font fallback chain.
 \IfFontExistsTF{PingFang SC}{
   \setCJKmainfont{PingFang SC}
   \setCJKsansfont{PingFang SC}
 }{
-  \IfFontExistsTF{Noto Sans CJK SC}{
-    \setCJKmainfont{Noto Sans CJK SC}
-    \setCJKsansfont{Noto Sans CJK SC}
+  \IfFontExistsTF{Songti SC}{
+    \setCJKmainfont{Songti SC}
+    \setCJKsansfont{Songti SC}
   }{
-    \IfFontExistsTF{Songti SC}{
-      \setCJKmainfont{Songti SC}
-      \setCJKsansfont{Songti SC}
+    \IfFontExistsTF{STSong}{
+      \setCJKmainfont{STSong}
+      \setCJKsansfont{STSong}
     }{
       \setCJKmainfont{FandolSong-Regular}
       \setCJKsansfont{FandolHei-Regular}

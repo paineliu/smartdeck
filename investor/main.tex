@@ -12,7 +12,10 @@
 \input{theme/fonts}
 \input{theme/layout}
 \input{theme/components}
-\usetheme{SmartBloom}
+
+% Theme file is inside investor/theme/.
+% Do not use \usetheme{SmartBloom}, because Beamer does not search subdirectories.
+\usepackage{theme/beamerthemeSmartBloom}
 
 \title{SmartBloom AI}
 \subtitle{Language Intelligence Company}
