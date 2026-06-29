@@ -1,12 +1,40 @@
 \SBPage{Solutions}{
-\SBSlideLead{Technology assets become products and devices.}
-\vspace{0.26cm}
-\begin{columns}[T,onlytextwidth]
-\column{0.23\textwidth}\SBCard{\linewidth}{Consumer}{SmartInput}
-\column{0.23\textwidth}\SBCard{\linewidth}{Education}{SmartBloom}
-\column{0.23\textwidth}\SBCard{\linewidth}{International Chinese}{Zhihua Companion}
-\column{0.23\textwidth}\SBCard{\linewidth}{Developer}{MassiveEdit}
-\end{columns}
-\vspace{0.24cm}
-\begin{center}\SBSubtitleText{Products are proof points. The platform is the company.}\end{center}
+\SBSlideLead{Technology assets become products, services and devices.}
+
+\vspace{0.30cm}
+
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm]
+
+\node (core) at (0,1.10)
+{\SBCenterNode{5.2cm}{Language Intelligence Stack}{Input · Search · Knowledge · Runtime}};
+
+\node at (-5.00,2.65) {\SBMiniNode{2.60cm}{SmartInput}{AI-native input}};
+\node at (-1.70,2.65) {\SBMiniNode{2.60cm}{SmartBloom}{AI learning platform}};
+\node at (1.70,2.65) {\SBMiniNode{2.60cm}{Zhihua Companion}{Learning assistant}};
+\node at (5.00,2.65) {\SBMiniNode{2.60cm}{Enterprise AI}{Private deployment}};
+
+\node at (-3.30,-0.65) {\SBMiniNode{2.70cm}{MassiveEdit}{Developer productivity}};
+\node at (0,-0.65) {\SBMiniNode{2.70cm}{AI Devices}{Keyboard · Pen}};
+\node at (3.30,-0.65) {\SBMiniNode{2.70cm}{SDK / API}{Platform integration}};
+
+\draw[SBLine,line width=0.8pt] (-4.20,2.25) -- (-1.80,1.45);
+\draw[SBLine,line width=0.8pt] (-1.40,2.25) -- (-0.55,1.45);
+\draw[SBLine,line width=0.8pt] (1.40,2.25) -- (0.55,1.45);
+\draw[SBLine,line width=0.8pt] (4.20,2.25) -- (1.80,1.45);
+
+\draw[SBLine,line width=0.8pt] (-3.30,-0.25) -- (-1.70,0.75);
+\draw[SBLine,line width=0.8pt] (0,-0.25) -- (0,0.75);
+\draw[SBLine,line width=0.8pt] (3.30,-0.25) -- (1.70,0.75);
+
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.12cm}
+
+\begin{center}
+{\SBFontBody\fontsize{9.0}{11.0}\selectfont\color{SBGray}
+Products are proof points. The platform is the company.
+}
+\end{center}
 }

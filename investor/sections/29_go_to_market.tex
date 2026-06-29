@@ -1,28 +1,95 @@
-\SBPage{Go-to-Market}{
-\SBSlideLead{Start vertical. Scale horizontally.}
-\vspace{0.34cm}
+\SBPage{Go-To-Market}{
+\SBSlideLead{Growing from a focused niche to a global AI platform.}
+
+\vspace{0.06cm}
 
 \begin{center}
-\SBFlowNode{0.16\textwidth}{University}{Anchor users}\hspace{0.020\textwidth}%
-\SBFlowNode{0.17\textwidth}{Education}{Repeatable sales}\hspace{0.020\textwidth}%
-\SBFlowNode{0.17\textwidth}{Enterprise}{Private deploy}\hspace{0.020\textwidth}%
-\SBFlowNode{0.17\textwidth}{Developer}{SDK / API}\hspace{0.020\textwidth}%
-\SBFlowNode{0.16\textwidth}{Global}{Expansion}
+
+\begin{tikzpicture}[>=latex]
+
+% Timeline
+\draw[SBPrimary,line width=1.2pt] (-5.5,0) -- (5.5,0);
+
+% Nodes
+\foreach \x in {-5.5,-2.75,0,2.75,5.5}
+{
+    \fill[SBPrimary] (\x,0) circle (2.8pt);
+}
+
+% Titles
+\node[align=center] at (-5.5,0.75)
+{\SBFontTitle\fontsize{9}{11}\selectfont
+Universities};
+
+\node[align=center] at (-2.75,0.75)
+{\SBFontTitle\fontsize{9}{11}\selectfont
+Education};
+
+\node[align=center] at (0,0.75)
+{\SBFontTitle\fontsize{9}{11}\selectfont
+Enterprise};
+
+\node[align=center] at (2.75,0.75)
+{\SBFontTitle\fontsize{9}{11}\selectfont
+Developers};
+
+\node[align=center] at (5.5,0.75)
+{\SBFontTitle\fontsize{9}{11}\selectfont
+Global};
+
+% Descriptions
+
+\node[align=center] at (-5.5,-0.95)
+{\SBFontBody\fontsize{7.5}{9}\selectfont
+BLCU\\
+Pilot users};
+
+\node[align=center] at (-2.75,-0.95)
+{\SBFontBody\fontsize{7.5}{9}\selectfont
+Schools\\
+Language learning};
+
+\node[align=center] at (0,-0.95)
+{\SBFontBody\fontsize{7.5}{9}\selectfont
+Knowledge\\
+AI solutions};
+
+\node[align=center] at (2.75,-0.95)
+{\SBFontBody\fontsize{7.5}{9}\selectfont
+SDK\\
+Platform};
+
+\node[align=center] at (5.5,-0.95)
+{\SBFontBody\fontsize{7.5}{9}\selectfont
+Worldwide\\
+Expansion};
+
+\end{tikzpicture}
+
 \end{center}
 
-\vspace{0.44cm}
+\vspace{0.05cm}
 
 \begin{columns}[T,onlytextwidth]
-\column{0.31\textwidth}
-\SBIconCard{\linewidth}{education}{Wedge}{International Chinese education}
-\column{0.31\textwidth}
-\SBIconCard{\linewidth}{enterprise}{Scale}{Enterprise AI}
-\column{0.31\textwidth}
-\SBIconCard{\linewidth}{api}{Platform}{Developer ecosystem}
+
+\column{0.48\textwidth}
+\SBMiniNode{\linewidth}
+{Initial Market}
+{International Chinese education}
+
+\column{0.48\textwidth}
+\SBMiniNode{\linewidth}
+{Long-term Vision}
+{Global language intelligence}
+
 \end{columns}
 
-\vspace{0.26cm}
+\vspace{0.35cm}
+
 \begin{center}
-{\SBFontBody\fontsize{9.2}{11.2}\selectfont\color{SBGray}Product-led adoption, then platform-led expansion.}
+{\SBFontBody\fontsize{9}{11}\selectfont\color{SBGray}
+Start with education. Scale through AI. Expand globally.
+}
 \end{center}
+
 }

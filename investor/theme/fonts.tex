@@ -1,6 +1,23 @@
 % Keep font settings conservative for cross-platform XeLaTeX builds.
-% ctex provides reliable CJK defaults on macOS, Linux and GitHub Actions.
 \defaultfontfeatures{Ligatures=TeX}
+
+\IfFontExistsTF{PingFang SC}{
+  \setCJKmainfont{PingFang SC}
+  \setCJKsansfont{PingFang SC}
+}{
+  \IfFontExistsTF{Hiragino Sans GB}{
+    \setCJKmainfont{Hiragino Sans GB}
+    \setCJKsansfont{Hiragino Sans GB}
+  }{
+    \IfFontExistsTF{Songti SC}{
+      \setCJKmainfont{Songti SC}
+      \setCJKsansfont{Songti SC}
+    }{
+      \setCJKmainfont{STSong}
+      \setCJKsansfont{STSong}
+    }
+  }
+}
 
 \newcommand{\SBFontTitle}{\sffamily\bfseries}
 \newcommand{\SBFontBody}{\sffamily}

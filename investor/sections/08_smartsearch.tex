@@ -1,24 +1,47 @@
 \SBPage{SmartSearch Engine}{
-\SBSlideLead{One query layer connects multiple retrieval methods.}
-\vspace{0.20cm}
+\SBSlideLead{Hybrid retrieval for language intelligence.}
+
+\vspace{0.18cm}
 
 \begin{center}
 \begin{tikzpicture}[x=1cm,y=1cm]
-\node (query) at (0,3.25) {\SBCenterNode{3.2cm}{Query}{Text · Pinyin · Meaning}};
-\node (engine) at (0,1.85) {\SBCenterNode{4.2cm}{SmartSearch}{Unified retrieval engine}};
-\node (rag) at (0,0.40) {\SBCenterNode{3.4cm}{RAG Ready}{Knowledge and agents}};
-\draw[SBPrimary, line width=1pt, -{Latex[length=2mm]}] (query) -- (engine);
+
+% Center engine
+\node (engine) at (0,2.90) {\SBCenterNode{4.0cm}{SmartSearch}{Unified retrieval engine}};
+\node (rag) at (0,0.85) {\SBCenterNode{3.6cm}{RAG / Agent}{Knowledge-ready output}};
+
 \draw[SBPrimary, line width=1pt, -{Latex[length=2mm]}] (engine) -- (rag);
 
-\node at (-5.35,2.35) {\SBMiniNode{2.35cm}{Full Text}{Text}};
-\node at (-3.25,2.35) {\SBMiniNode{2.35cm}{Pinyin}{Phonetic}};
-\node at (3.25,2.35) {\SBMiniNode{2.35cm}{Semantic}{Meaning}};
-\node at (5.35,2.35) {\SBMiniNode{2.35cm}{Vector}{Embedding}};
+% Left: query types
+\node at (-5.20,3.10) {\SBMiniNode{2.45cm}{Text Query}{Words and phrases}};
+\node at (-5.20,2.20) {\SBMiniNode{2.45cm}{Pinyin Query}{Phonetic input}};
+\node at (-5.20,1.30) {\SBMiniNode{2.45cm}{Structure Query}{Radical / stroke}};
 
-\node at (-5.35,1.20) {\SBMiniNode{2.35cm}{Radical}{Structure}};
-\node at (-3.25,1.20) {\SBMiniNode{2.35cm}{Stroke}{Writing}};
-\node at (3.25,1.20) {\SBMiniNode{2.35cm}{Corpus}{CQL}};
-\node at (5.35,1.20) {\SBMiniNode{2.35cm}{Component}{Parts}};
+% Right: retrieval backends
+\node at (5.20,3.10) {\SBMiniNode{2.45cm}{Full-text}{Exact retrieval}};
+\node at (5.20,2.20) {\SBMiniNode{2.45cm}{Corpus}{CQL and examples}};
+\node at (5.20,1.30) {\SBMiniNode{2.45cm}{Vector}{Semantic retrieval}};
+
+% Connectors
+\draw[SBLine, line width=0.9pt] (-3.95,3.10) -- (-2.15,3.15);
+\draw[SBLine, line width=0.9pt] (-3.95,2.20) -- (-2.15,3.00);
+\draw[SBLine, line width=0.9pt] (-3.95,1.30) -- (-2.15,2.85);
+
+\draw[SBLine, line width=0.9pt] (2.15,3.15) -- (3.95,3.10);
+\draw[SBLine, line width=0.9pt] (2.15,3.00) -- (3.95,2.20);
+\draw[SBLine, line width=0.9pt] (2.15,2.85) -- (3.95,1.30);
+
+% Section labels
+\node at (-5.20,3.85) {{\SBFontTitle\fontsize{8.4}{10}\selectfont\color{SBPrimary}QUERY TYPES}};
+\node at (5.20,3.85) {{\SBFontTitle\fontsize{8.4}{10}\selectfont\color{SBPrimary}RETRIEVAL MODES}};
+
 \end{tikzpicture}
+\end{center}
+
+
+\begin{center}
+{\SBFontBody\fontsize{9.0}{11.0}\selectfont\color{SBGray}
+From Chinese-specific queries to hybrid retrieval, then into RAG and agent workflows.
+}
 \end{center}
 }

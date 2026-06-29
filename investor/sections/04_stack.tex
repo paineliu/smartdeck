@@ -1,25 +1,36 @@
-\SBPage{Language Intelligence Stack}{
-\SBSlideLead{End-to-end capabilities across understanding, generation and application.}
-\vspace{0.18cm}
+\SBPage{Our Technology Stack}{
+\SBSlideLead{{\SBFontTitle\fontsize{13.0}{15.5}\selectfont One unified stack. End-to-end language AI infrastructure.}}
 
-\begin{center}
-\begin{tikzpicture}[x=1cm,y=1cm]
-\node (app) at (0,3.55) {\SBCenterNode{5.6cm}{Applications}{SmartBloom · SmartInput · Devices}};
-\node (agent) at (0,2.55) {\SBCenterNode{4.9cm}{Agent Layer}{Task execution and interaction}};
-\node (know) at (0,1.55) {\SBCenterNode{4.3cm}{Knowledge Layer}{RAG · Corpus · Domain data}};
-\node (engine) at (0,0.55) {\SBCenterNode{3.8cm}{Language Engine}{Input · Search · Recognition}};
-\node (run) at (0,-0.45) {\SBCenterNode{3.2cm}{Runtime}{Cross-platform deployment}};
-\draw[SBPrimary, line width=1.0pt, -{Latex[length=2mm]}] (app) -- (agent);
-\draw[SBPrimary, line width=1.0pt, -{Latex[length=2mm]}] (agent) -- (know);
-\draw[SBPrimary, line width=1.0pt, -{Latex[length=2mm]}] (know) -- (engine);
-\draw[SBPrimary, line width=1.0pt, -{Latex[length=2mm]}] (engine) -- (run);
+\vspace{0.10cm}
 
-\node at (-5.15,2.95) {\SBMiniNode{3.0cm}{SmartInput}{Language input}};
-\node at (-5.15,1.95) {\SBMiniNode{3.0cm}{Handwriting}{Recognition}};
-\node at (-5.15,0.95) {\SBMiniNode{3.0cm}{SmartSearch}{Retrieval}};
-\node at (5.15,2.95) {\SBMiniNode{3.0cm}{Knowledge}{RAG and Agent}};
-\node at (5.15,1.95) {\SBMiniNode{3.0cm}{Edge AI}{Digital human}};
-\node at (5.15,0.95) {\SBMiniNode{3.0cm}{Cross Platform}{Runtime}};
-\end{tikzpicture}
-\end{center}
+\SBTechStackRow
+  {\SBStackIconCube}
+  {Applications}
+  {SmartBloom, SmartInput, Enterprise AI}
+  {End-user products and enterprise solutions.}
+  {}
+\SBTechStackRow
+  {\SBStackIconBrain}
+  {AI Capabilities}
+  {LLM, NLP, Generation, Agents}
+  {AI models and capabilities for language intelligence.}
+  {}
+\SBTechStackRow
+  {\SBStackIconDatabase}
+  {Language Engine}
+  {Script Processing, Knowledge Graph,\\Search \& Retrieval, Safety \& Quality}
+  {Core language engine and knowledge system.}
+  {}
+\SBTechStackRow
+  {\SBStackIconLayers}
+  {Data \& Resources}
+  {Language Data, Knowledge Base,\\Vector Database, APIs \& Tools}
+  {High-quality data and knowledge resources.}
+  {}
+\SBTechStackRow
+  {\SBStackIconCloud}
+  {Infrastructure}
+  {Cloud Platform, Compute, Storage, Security}
+  {Secure, scalable and high-performance infra.}
+  {}
 }

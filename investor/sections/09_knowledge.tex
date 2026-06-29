@@ -1,15 +1,52 @@
 \SBPage{Knowledge Engine}{
-\SBSlideLead{From language resources to AI agents.}
-\vspace{0.24cm}
+\SBSlideLead{Powering RAG and intelligent agents.}
 
-\SBStackLine{Knowledge Base}{Structured resources and domain data}
-\SBStackLine{Retrieval}{SmartSearch and vector search}
-\SBStackLine{RAG}{Grounded model generation}
-\SBStackLine{Agent}{Task execution and learning support}
+\vspace{0.22cm}
 
-\vspace{0.18cm}
 \begin{center}
-{\SBFontBody\fontsize{9.2}{11.2}\selectfont\color{SBGray}
-Structured resources, retrieval, generation and agent execution in one engine.}
+\begin{tikzpicture}[x=1cm,y=1cm]
+
+% Left: resources
+\node at (-5.35,2.75) {\SBMiniNode{2.65cm}{Corpus}{Language examples}};
+\node at (-5.35,1.78) {\SBMiniNode{2.65cm}{Dictionary}{Words and meanings}};
+\node at (-5.35,0.81) {\SBMiniNode{2.65cm}{Materials}{Teaching content}};
+\node at (-5.35,-0.16) {\SBMiniNode{2.65cm}{Domain Data}{Enterprise knowledge}};
+
+% Center: engine
+\node (engine) at (0,2.30) {\SBCenterNode{4.25cm}{Knowledge Engine}{Organize · Index · Retrieve}};
+\node (rag) at (0,0.00) {\SBCenterNode{3.65cm}{RAG + Agent}{Grounded generation and workflows}};
+
+\draw[SBPrimary, line width=1pt, -{Latex[length=2mm]}] (engine) -- (rag);
+
+% Right: applications
+\node at (5.35,2.75) {\SBMiniNode{2.65cm}{AI Tutor}{Learning support}};
+\node at (5.35,1.78) {\SBMiniNode{2.65cm}{SmartSearch}{Knowledge retrieval}};
+\node at (5.35,0.81) {\SBMiniNode{2.65cm}{Digital Human}{Interactive service}};
+\node at (5.35,-0.16) {\SBMiniNode{2.65cm}{Enterprise AI}{Private deployment}};
+
+% Connectors
+\draw[SBLine, line width=0.9pt] (-4.00,2.75) -- (-2.05,2.62);
+\draw[SBLine, line width=0.9pt] (-4.00,1.78) -- (-2.05,2.42);
+\draw[SBLine, line width=0.9pt] (-4.00,0.81) -- (-2.05,2.18);
+\draw[SBLine, line width=0.9pt] (-4.00,-0.16) -- (-2.05,1.95);
+
+\draw[SBLine, line width=0.9pt] (2.05,2.62) -- (4.00,2.75);
+\draw[SBLine, line width=0.9pt] (2.05,2.42) -- (4.00,1.78);
+\draw[SBLine, line width=0.9pt] (2.05,2.18) -- (4.00,0.81);
+\draw[SBLine, line width=0.9pt] (2.05,1.95) -- (4.00,-0.16);
+
+% Labels
+\node at (-5.35,3.50) {{\SBFontTitle\fontsize{8.4}{10}\selectfont\color{SBPrimary}LANGUAGE RESOURCES}};
+\node at (5.35,3.50) {{\SBFontTitle\fontsize{8.4}{10}\selectfont\color{SBPrimary}AI APPLICATIONS}};
+
+\end{tikzpicture}
 \end{center}
+
+% \vspace{0.08cm}
+
+% \begin{center}
+% {\SBFontBody\fontsize{9.0}{11.0}\selectfont\color{SBGray}
+% One knowledge engine powering multiple AI products and services.
+% }
+% \end{center}
 }

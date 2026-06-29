@@ -2,8 +2,7 @@
   \begin{beamercolorbox}[wd=#1,ht=\SBCardH,dp=0.22cm,sep=0.10cm,center,rounded=true,shadow=false]{sbcard}%
     \begin{minipage}[c][\SBCardInnerH][c]{0.92\linewidth}
       \centering
-      {\color{SBPrimary}\rule{\SBAccentRuleW}{\SBAccentRuleH}}\par
-      \vspace{0.06cm}
+\vspace{0.06cm}
       {\SBFontTitle\fontsize{10.0}{12.0}\selectfont\color{SBText}#2}\par
       \vspace{\SBCardTitleGap}
       {\SBFontBody\fontsize{8.0}{9.8}\selectfont\color{SBMuted}#3}
@@ -15,9 +14,7 @@
   \begin{beamercolorbox}[wd=#1,ht=\SBMetricH,dp=0.20cm,sep=0.08cm,center,rounded=true,shadow=false]{sbmetric}%
     \begin{minipage}[c][\SBMetricInnerH][c]{0.92\linewidth}
       \centering
-      {\SBFontTitle\fontsize{18}{21}\selectfont\color{SBPrimary}#2}\par
-      \vspace{0.025cm}
-      {\color{SBPrimary}\rule{0.42cm}{0.8pt}}\par
+      {\SBFontTitle\fontsize{14}{18}\selectfont\color{SBPrimary}#2}\par
       \vspace{0.025cm}
       {\SBFontBody\fontsize{8.0}{9.8}\selectfont\color{SBMuted}#3}
     \end{minipage}
@@ -39,6 +36,126 @@
     \column{0.31\textwidth}\SBCard{\linewidth}{#3}{#4}
     \column{0.31\textwidth}\SBCard{\linewidth}{#5}{#6}
   \end{columns}%
+}
+
+\newcommand{\SBCompanyIconInfrastructure}{%
+  \begin{tikzpicture}[x=0.012cm,y=0.012cm,line width=1.35pt,draw=SBPrimary,line cap=round,line join=round]
+    \path[use as bounding box] (0,0) rectangle (96,96);
+    \draw (48,80) -- (78,65) -- (48,50) -- (18,65) -- cycle;
+    \draw (27,54) -- (48,43) -- (69,54);
+    \draw (27,41) -- (48,30) -- (69,41);
+    \draw (27,28) -- (48,17) -- (69,28);
+  \end{tikzpicture}%
+}
+
+\newcommand{\SBCompanyIconApplications}{%
+  \begin{tikzpicture}[x=0.012cm,y=0.012cm,line width=1.35pt,draw=SBPrimary,line cap=round,line join=round]
+    \path[use as bounding box] (0,0) rectangle (96,96);
+    \draw[rounded corners=1.4pt] (22,74) rectangle (45,51);
+    \draw[rounded corners=1.4pt] (51,74) rectangle (74,51);
+    \draw[rounded corners=1.4pt] (22,45) rectangle (45,22);
+    \draw[rounded corners=1.4pt] (51,45) rectangle (74,22);
+  \end{tikzpicture}%
+}
+
+\newcommand{\SBCompanyIconPlatform}{%
+  \begin{tikzpicture}[x=0.012cm,y=0.012cm,line width=1.35pt,draw=SBPrimary,line cap=round,line join=round]
+    \path[use as bounding box] (0,0) rectangle (96,96);
+    \draw (48,76) -- (24,29) -- (72,29) -- cycle;
+    \fill[SBCardBg] (48,76) circle (12);
+    \fill[SBCardBg] (24,29) circle (12);
+    \fill[SBCardBg] (72,29) circle (12);
+    \draw (48,76) circle (12);
+    \draw (24,29) circle (12);
+    \draw (72,29) circle (12);
+  \end{tikzpicture}%
+}
+
+\newcommand{\SBCompanyCard}[4]{%
+  \begin{beamercolorbox}[wd=#1,ht=3.62cm,dp=0.20cm,sep=0.12cm,center,rounded=true,shadow=false]{sbcard}%
+    \begin{minipage}[c][3.34cm][c]{0.90\linewidth}
+      \centering
+      \makebox[1.16cm][c]{#2}\par
+      \vspace{0.34cm}
+      {\SBFontTitle\fontsize{15.5}{18.5}\selectfont\color{SBText}#3}\par
+      \vspace{0.24cm}
+      {\SBFontBody\fontsize{10.4}{15.2}\selectfont\color{SBText}#4}
+    \end{minipage}
+  \end{beamercolorbox}%
+}
+
+\newcommand{\SBStackIconCube}{%
+  \begin{tikzpicture}[x=0.012cm,y=0.012cm,line width=1.25pt,draw=white,line cap=round,line join=round]
+    \path[use as bounding box] (0,0) rectangle (60,60);
+    \draw (30,8) -- (50,18) -- (50,42) -- (30,52) -- (10,42) -- (10,18) -- cycle;
+    \draw (10,42) -- (30,30) -- (50,42);
+    \draw (30,30) -- (30,8);
+    \draw (10,18) -- (30,30) -- (50,18);
+  \end{tikzpicture}%
+}
+
+\newcommand{\SBStackIconBrain}{%
+  \begin{tikzpicture}[x=0.012cm,y=0.012cm,line width=1.25pt,draw=white,line cap=round,line join=round]
+    \path[use as bounding box] (0,0) rectangle (60,60);
+    \draw (28,14) .. controls (13,12) and (10,28) .. (16,35)
+      .. controls (9,43) and (17,54) .. (28,48);
+    \draw (32,14) .. controls (47,12) and (50,28) .. (44,35)
+      .. controls (51,43) and (43,54) .. (32,48);
+    \draw (30,14) -- (30,48);
+    \draw (20,31) -- (26,31);
+    \draw (34,31) -- (40,31);
+    \draw (23,23) .. controls (26,21) and (27,19) .. (27,16);
+    \draw (37,23) .. controls (34,21) and (33,19) .. (33,16);
+  \end{tikzpicture}%
+}
+
+\newcommand{\SBStackIconDatabase}{%
+  \begin{tikzpicture}[x=0.012cm,y=0.012cm,line width=1.25pt,draw=white,line cap=round,line join=round]
+    \path[use as bounding box] (0,0) rectangle (60,60);
+    \draw (13,44) ellipse (17 and 7);
+    \draw (13,44) arc (180:360:17 and 7);
+    \draw (13,34) arc (180:360:17 and 7);
+    \draw (13,24) arc (180:360:17 and 7);
+    \draw (13,44) -- (13,16);
+    \draw (47,44) -- (47,16);
+    \draw (13,16) arc (180:360:17 and 7);
+  \end{tikzpicture}%
+}
+
+\newcommand{\SBStackIconLayers}{%
+  \begin{tikzpicture}[x=0.012cm,y=0.012cm,line width=1.25pt,draw=white,line cap=round,line join=round]
+    \path[use as bounding box] (0,0) rectangle (60,60);
+    \draw (30,47) -- (50,37) -- (30,27) -- (10,37) -- cycle;
+    \draw (16,28) -- (30,20) -- (44,28);
+    \draw (16,18) -- (30,10) -- (44,18);
+  \end{tikzpicture}%
+}
+
+\newcommand{\SBStackIconCloud}{%
+  \begin{tikzpicture}[x=0.012cm,y=0.012cm,line width=1.25pt,draw=white,line cap=round,line join=round]
+    \path[use as bounding box] (0,0) rectangle (60,60);
+    \draw (17,22) .. controls (7,22) and (8,39) .. (20,39)
+      .. controls (22,51) and (41,51) .. (43,38)
+      .. controls (54,38) and (55,22) .. (43,22) -- cycle;
+  \end{tikzpicture}%
+}
+
+\newcommand{\SBTechStackRow}[5]{%
+  \begin{tikzpicture}[x=1cm,y=1cm,baseline=(row.base)]
+    \coordinate (row) at (0,0);
+    \path[use as bounding box] (0,-0.44) rectangle (14.20,0.44);
+    \draw[rounded corners=4pt,draw=SBLine,fill=SBPaper,line width=0.45pt] (0,-0.44) rectangle (14.20,0.44);
+    \begin{scope}
+      \clip[rounded corners=4pt] (0,-0.44) rectangle (14.20,0.44);
+      \fill[SBPrimary] (0,-0.44) rectangle (3.70,0.44);
+    \end{scope}
+    \node[anchor=center] at (0.66,0) {#1};
+    \node[anchor=west,text=white] at (1.15,0) {{\SBFontTitle\fontsize{8.0}{9.6}\selectfont #2}};
+    \node[anchor=west,text=SBText,text width=5.75cm] at (4.18,0) {{\SBFontTitle\fontsize{7.2}{8.9}\selectfont #3}};
+    \draw[SBLine,line width=0.45pt] (10.25,-0.20) -- (10.25,0.20);
+    \fill[SBPrimary] (10.72,0) circle (0.050);
+    \node[anchor=west,text=SBMuted,text width=3.05cm] at (11.08,0) {{\SBFontBody\fontsize{6.8}{8.3}\selectfont #4}};
+  \end{tikzpicture}\par\vspace{0.08cm}%
 }
 
 \newcommand{\SBFourMetrics}[8]{%
@@ -65,8 +182,7 @@
   \begin{beamercolorbox}[wd=#1,ht=\SBPlatformH,dp=0.18cm,sep=0.08cm,center,rounded=true,shadow=false]{sbcard}%
     \begin{minipage}[c][\SBPlatformInnerH][c]{0.92\linewidth}
       \centering
-      {\color{SBPrimary}\rule{0.40cm}{0.8pt}}\par
-      \vspace{0.05cm}
+\vspace{0.05cm}
       {\SBFontTitle\fontsize{9.2}{11.0}\selectfont\color{SBText}#2}\par
       \vspace{0.045cm}
       {\SBFontBody\fontsize{7.4}{9.0}\selectfont\color{SBMuted}#3}
@@ -90,8 +206,7 @@
   \begin{beamercolorbox}[wd=#1,ht=1.18cm,dp=0.16cm,sep=0.08cm,center,rounded=true,shadow=false]{sbcard}%
     \begin{minipage}[c][1.02cm][c]{0.90\linewidth}
       \centering
-      {\color{SBPrimary}\rule{0.34cm}{0.75pt}}\par
-      \vspace{0.04cm}
+\vspace{0.04cm}
       {\SBFontTitle\fontsize{9.2}{11.0}\selectfont\color{SBText}#2}\par
       \vspace{0.035cm}
       {\SBFontBody\fontsize{7.2}{8.8}\selectfont\color{SBMuted}#3}
@@ -201,8 +316,7 @@
   \begin{beamercolorbox}[wd=#1,ht=2.25cm,dp=0.16cm,sep=0.12cm,center,rounded=true,shadow=false]{sbcard}%
     \begin{minipage}[c][2.00cm][c]{0.88\linewidth}
       \centering
-      {\color{SBPrimary}\rule{0.45cm}{0.8pt}}\par
-      \vspace{0.08cm}
+\vspace{0.08cm}
       {\SBFontTitle\fontsize{10.2}{12.2}\selectfont\color{SBText}#2}\par
       \vspace{0.13cm}
       {\SBFontBody\fontsize{7.8}{9.5}\selectfont\color{SBMuted}#3}
