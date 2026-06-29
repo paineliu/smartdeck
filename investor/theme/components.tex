@@ -1,64 +1,49 @@
-\tcbset{
-  sbbase/.style={
-    enhanced,
-    boxrule=0.7pt,
-    arc=3mm,
-    left=2.4mm,right=2.4mm,top=2.2mm,bottom=2.2mm,
-    colback=white,
-    colframe=SBBorder,
-    boxsep=0pt,
-    sharp corners=downhill
-  }
+\newcommand{\SBCard}[3]{%
+  \begin{beamercolorbox}[wd=#1,sep=0.15cm,rounded=true,shadow=false]{sbcard}%
+    {\SBFontTitle\fontsize{11.2}{14}\selectfont\color{SBText}#2}\par
+    \vspace{0.06cm}
+    {\SBFontBody\fontsize{9.0}{12}\selectfont\color{SBMuted}#3}
+  \end{beamercolorbox}%
 }
 
-\newcommand{\SBMetric}[2]{%
-\begin{tcolorbox}[sbbase,width=2.55cm,height=1.70cm,valign=center,halign=center]
-{\SBFontTitle\color{SBPrimary}\fontsize{25}{29}\selectfont #1}\par\vspace{0.04cm}
-{\SBFontBody\color{SBMuted}\fontsize{8.7}{11}\selectfont #2}
-\end{tcolorbox}%
+\newcommand{\SBMetric}[3]{%
+  \begin{beamercolorbox}[wd=#1,sep=0.12cm,center,rounded=true,shadow=false]{sbmetric}%
+    {\SBFontTitle\fontsize{20}{24}\selectfont\color{SBPrimary}#2}\par
+    \vspace{0.03cm}
+    {\SBFontBody\fontsize{8.7}{11}\selectfont\color{SBMuted}#3}
+  \end{beamercolorbox}%
 }
 
-\newcommand{\SBCard}[2]{%
-\begin{tcolorbox}[sbbase,width=2.72cm,height=1.45cm]
-{\SBFontTitle\color{SBText}\fontsize{11.6}{14}\selectfont #1}\par\vspace{0.05cm}
-{\SBFontBody\color{SBMuted}\fontsize{8.3}{10.8}\selectfont #2}
-\end{tcolorbox}%
-}
-
-\newcommand{\SBFeature}[3]{%
-\begin{tcolorbox}[sbbase,width=3.05cm,height=1.38cm,colback=#1]
-{\SBFontTitle\color{SBText}\fontsize{11.4}{14}\selectfont #2}\par\vspace{0.04cm}
-{\SBFontBody\color{SBMuted}\fontsize{8.3}{10.8}\selectfont #3}
-\end{tcolorbox}%
+\newcommand{\SBPill}[2]{%
+  \colorbox{#1}{\strut\hspace{0.16cm}{\color{white}\SBFontTitle\fontsize{8.5}{11}\selectfont #2}\hspace{0.16cm}}%
 }
 
 \newcommand{\SBQuote}[1]{%
-\begin{center}
-{\SBFontTitle\color{SBText}\fontsize{23}{29}\selectfont ``#1''}
-\end{center}
+  \begin{beamercolorbox}[wd=0.86\textwidth,sep=0.20cm,center,rounded=true]{sbquote}%
+    {\SBFontTitle\fontsize{17}{22}\selectfont\color{SBText}#1}
+  \end{beamercolorbox}%
 }
 
-\newcommand{\SBSection}[2]{%
-\begin{frame}[plain]
-\vspace*{2.25cm}
-\begin{center}
-{\SBFontTitle\color{SBPrimary}\fontsize{11}{14}\selectfont #1}\par\vspace{0.25cm}
-{\SBFontTitle\color{SBText}\fontsize{34}{40}\selectfont #2}
-\end{center}
-\end{frame}
+\newcommand{\SBThreeCards}[6]{%
+  \begin{columns}[T,onlytextwidth]
+    \column{0.31\textwidth}\SBCard{\linewidth}{#1}{#2}
+    \column{0.31\textwidth}\SBCard{\linewidth}{#3}{#4}
+    \column{0.31\textwidth}\SBCard{\linewidth}{#5}{#6}
+  \end{columns}%
 }
 
-\newcommand{\SBTimelineItem}[2]{%
-\begin{tcolorbox}[sbbase,width=2.35cm,height=1.16cm,halign=center,valign=center]
-{\SBFontTitle\color{SBPrimary}\fontsize{13}{16}\selectfont #1}\par
-{\SBFontBody\color{SBMuted}\fontsize{8.2}{10.5}\selectfont #2}
-\end{tcolorbox}%
+\newcommand{\SBFourMetrics}[8]{%
+  \begin{columns}[T,onlytextwidth]
+    \column{0.23\textwidth}\SBMetric{\linewidth}{#1}{#2}
+    \column{0.23\textwidth}\SBMetric{\linewidth}{#3}{#4}
+    \column{0.23\textwidth}\SBMetric{\linewidth}{#5}{#6}
+    \column{0.23\textwidth}\SBMetric{\linewidth}{#7}{#8}
+  \end{columns}%
 }
 
-\newcommand{\SBRoadmapItem}[3]{%
-\begin{tcolorbox}[sbbase,width=3.55cm,height=1.58cm]
-{\SBFontTitle\color{SBPrimary}\fontsize{11.5}{14}\selectfont #1}\par\vspace{0.04cm}
-{\SBFontTitle\color{SBText}\fontsize{10.8}{13}\selectfont #2}\par\vspace{0.03cm}
-{\SBFontBody\color{SBMuted}\fontsize{8.2}{10.5}\selectfont #3}
-\end{tcolorbox}%
+\newcommand{\SBStackLine}[2]{%
+  \begin{beamercolorbox}[wd=\linewidth,sep=0.10cm,rounded=true]{sbline}%
+    {\SBFontTitle\fontsize{10.2}{13}\selectfont\color{SBText}#1}\hfill
+    {\SBFontBody\fontsize{8.5}{11}\selectfont\color{SBGray}#2}
+  \end{beamercolorbox}\vspace{0.07cm}%
 }

@@ -1,5 +1,6 @@
-% Keep font configuration minimal for maximum portability.
-% ctex will select proper CJK fonts on macOS / Linux / GitHub Actions.
-% Use sans-serif style for a modern deck look.
+% Keep font settings conservative for cross-platform XeLaTeX builds.
+% ctex provides reliable CJK defaults on macOS, Linux and GitHub Actions.
+\defaultfontfeatures{Ligatures=TeX}
+
 \newcommand{\SBFontTitle}{\sffamily\bfseries}
 \newcommand{\SBFontBody}{\sffamily}

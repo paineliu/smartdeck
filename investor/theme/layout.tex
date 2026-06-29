@@ -1,38 +1,31 @@
 \setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{footline}{}
 \setbeamertemplate{headline}{}
-\setlength{\tabcolsep}{3pt}
+\setbeamertemplate{footline}{}
+\setbeamersize{text margin left=0.82cm,text margin right=0.82cm}
 
-\newlength{\SBMargin}
-\setlength{\SBMargin}{0.86cm}
-
-\newcommand{\SBTitle}[1]{%
-  {\SBFontTitle\color{SBText}\fontsize{28}{33}\selectfont #1}\par
-  \vspace{0.12cm}
-  {\color{SBPrimary}\rule{2.55cm}{1.2pt}}\par
-  \vspace{0.38cm}
+\newcommand{\SBPage}[2]{%
+  \begin{frame}[plain]
+  \vspace*{0.36cm}
+  \noindent\SBHeadline{#1}\par
+  \vspace{0.08cm}
+  {\color{SBPrimary}\rule{2.25cm}{1.3pt}}\par
+  \vspace{0.25cm}
+  #2
+  \vspace{0.08cm}
+  \SBCaptionText{SmartBloom AI \hfill Confidential}
+  \end{frame}
 }
 
-\newcommand{\SBSubtitle}[1]{%
-  {\SBFontBody\color{SBMuted}\fontsize{13.5}{18.5}\selectfont #1}\par\vspace{0.30cm}
-}
-
-\newcommand{\SBStatement}[1]{%
-  {\SBFontTitle\color{SBText}\fontsize{22}{28}\selectfont #1}\par
-}
-
-\newcommand{\SBFooter}[1]{%
+\newcommand{\SBSectionPage}[2]{%
+  \begin{frame}[plain]
   \vfill
-  {\color{SBGray}\fontsize{8.2}{10}\selectfont SmartBloom AI \hfill #1}\par
-}
-
-\newcommand{\SBHeader}[2]{%
-  \vspace*{0.52cm}
-  \hspace*{0.72cm}\begin{minipage}{14.4cm}
-  \SBTitle{#1}
-  \SBSubtitle{#2}
-}
-
-\newcommand{\SBEndSlide}{%
-  \end{minipage}
+  \begin{center}
+  \SBKickerText{SmartDeck}\par
+  \vspace{0.35cm}
+  \SBDisplay{#1}\par
+  \vspace{0.25cm}
+  \SBSubtitleText{#2}
+  \end{center}
+  \vfill
+  \end{frame}
 }
