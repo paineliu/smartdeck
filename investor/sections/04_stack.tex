@@ -1,18 +1,25 @@
 \SBPage{Language Intelligence Stack}{
 \SBSlideLead{End-to-end capabilities across understanding, generation and application.}
-\vspace{0.26cm}
-\begin{columns}[T,onlytextwidth]
-\column{0.48\textwidth}
-\SBIconCard{\linewidth}{language}{SmartInput Engine}{Language input}
-\vspace{0.10cm}
-\SBIconCard{\linewidth}{ai}{Handwriting Engine}{Language recognition}
-\vspace{0.10cm}
-\SBIconCard{\linewidth}{search}{SmartSearch Engine}{Language retrieval}
-\column{0.48\textwidth}
-\SBIconCard{\linewidth}{knowledge}{Knowledge Engine}{RAG and Agent}
-\vspace{0.10cm}
-\SBIconCard{\linewidth}{device}{Edge AI Engine}{Digital human and devices}
-\vspace{0.10cm}
-\SBIconCard{\linewidth}{runtime}{Cross Platform Engine}{Multi-platform runtime}
-\end{columns}
+\vspace{0.18cm}
+
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\node (app) at (0,3.55) {\SBCenterNode{5.6cm}{Applications}{SmartBloom · SmartInput · Devices}};
+\node (agent) at (0,2.55) {\SBCenterNode{4.9cm}{Agent Layer}{Task execution and interaction}};
+\node (know) at (0,1.55) {\SBCenterNode{4.3cm}{Knowledge Layer}{RAG · Corpus · Domain data}};
+\node (engine) at (0,0.55) {\SBCenterNode{3.8cm}{Language Engine}{Input · Search · Recognition}};
+\node (run) at (0,-0.45) {\SBCenterNode{3.2cm}{Runtime}{Cross-platform deployment}};
+\draw[SBPrimary, line width=1.0pt, -{Latex[length=2mm]}] (app) -- (agent);
+\draw[SBPrimary, line width=1.0pt, -{Latex[length=2mm]}] (agent) -- (know);
+\draw[SBPrimary, line width=1.0pt, -{Latex[length=2mm]}] (know) -- (engine);
+\draw[SBPrimary, line width=1.0pt, -{Latex[length=2mm]}] (engine) -- (run);
+
+\node at (-5.15,2.95) {\SBMiniNode{3.0cm}{SmartInput}{Language input}};
+\node at (-5.15,1.95) {\SBMiniNode{3.0cm}{Handwriting}{Recognition}};
+\node at (-5.15,0.95) {\SBMiniNode{3.0cm}{SmartSearch}{Retrieval}};
+\node at (5.15,2.95) {\SBMiniNode{3.0cm}{Knowledge}{RAG and Agent}};
+\node at (5.15,1.95) {\SBMiniNode{3.0cm}{Edge AI}{Digital human}};
+\node at (5.15,0.95) {\SBMiniNode{3.0cm}{Cross Platform}{Runtime}};
+\end{tikzpicture}
+\end{center}
 }

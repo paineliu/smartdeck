@@ -1,17 +1,24 @@
 \SBPage{SmartSearch Engine}{
-\SBSlideLead{One engine. Multiple retrieval methods.}
-\vspace{0.24cm}
-\begin{columns}[T,onlytextwidth]
-\column{0.23\textwidth}\SBIconCard{\linewidth}{search}{Full Text}{Text retrieval}
-\column{0.23\textwidth}\SBIconCard{\linewidth}{language}{Pinyin}{Phonetic search}
-\column{0.23\textwidth}\SBIconCard{\linewidth}{knowledge}{Radical}{Chinese structure}
-\column{0.23\textwidth}\SBIconCard{\linewidth}{ai}{Stroke}{Writing features}
-\end{columns}
+\SBSlideLead{One query layer connects multiple retrieval methods.}
 \vspace{0.20cm}
-\begin{columns}[T,onlytextwidth]
-\column{0.23\textwidth}\SBIconCard{\linewidth}{knowledge}{Component}{Character parts}
-\column{0.23\textwidth}\SBIconCard{\linewidth}{search}{Corpus}{CQL query}
-\column{0.23\textwidth}\SBIconCard{\linewidth}{language}{Semantic}{Meaning search}
-\column{0.23\textwidth}\SBIconCard{\linewidth}{api}{Vector}{RAG-ready}
-\end{columns}
+
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\node (query) at (0,3.25) {\SBCenterNode{3.2cm}{Query}{Text · Pinyin · Meaning}};
+\node (engine) at (0,1.85) {\SBCenterNode{4.2cm}{SmartSearch}{Unified retrieval engine}};
+\node (rag) at (0,0.40) {\SBCenterNode{3.4cm}{RAG Ready}{Knowledge and agents}};
+\draw[SBPrimary, line width=1pt, -{Latex[length=2mm]}] (query) -- (engine);
+\draw[SBPrimary, line width=1pt, -{Latex[length=2mm]}] (engine) -- (rag);
+
+\node at (-5.35,2.35) {\SBMiniNode{2.35cm}{Full Text}{Text}};
+\node at (-3.25,2.35) {\SBMiniNode{2.35cm}{Pinyin}{Phonetic}};
+\node at (3.25,2.35) {\SBMiniNode{2.35cm}{Semantic}{Meaning}};
+\node at (5.35,2.35) {\SBMiniNode{2.35cm}{Vector}{Embedding}};
+
+\node at (-5.35,1.20) {\SBMiniNode{2.35cm}{Radical}{Structure}};
+\node at (-3.25,1.20) {\SBMiniNode{2.35cm}{Stroke}{Writing}};
+\node at (3.25,1.20) {\SBMiniNode{2.35cm}{Corpus}{CQL}};
+\node at (5.35,1.20) {\SBMiniNode{2.35cm}{Component}{Parts}};
+\end{tikzpicture}
+\end{center}
 }

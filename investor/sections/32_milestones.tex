@@ -1,16 +1,22 @@
 \SBPage{Milestones}{
 \SBSlideLead{A five-year path from language intelligence to language operating system.}
-\vspace{0.36cm}
+\vspace{0.55cm}
 
 \begin{center}
-\SBTimelineBox{0.18\textwidth}{2026}{Language Intelligence}\hspace{0.015\textwidth}%
-\SBTimelineBox{0.18\textwidth}{2027}{Enterprise Platform}\hspace{0.015\textwidth}%
-\SBTimelineBox{0.18\textwidth}{2028}{Global Expansion}\hspace{0.015\textwidth}%
-\SBTimelineBox{0.18\textwidth}{2029}{Foundation Model}\hspace{0.015\textwidth}%
-\SBTimelineBox{0.18\textwidth}{2030}{Language OS}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\draw[SBLine, line width=1.2pt] (-5.65,1.25) -- (5.65,1.25);
+\foreach \x in {-5.65,-2.825,0,2.825,5.65} {
+  \fill[SBPrimary] (\x,1.25) circle (0.08);
+}
+\node at (-5.65,0.20) {\SBMilestoneDot{2.05cm}{2026}{Language Intelligence}};
+\node at (-2.825,0.20) {\SBMilestoneDot{2.05cm}{2027}{Enterprise Platform}};
+\node at (0,0.20) {\SBMilestoneDot{2.05cm}{2028}{Global Expansion}};
+\node at (2.825,0.20) {\SBMilestoneDot{2.05cm}{2029}{Foundation Model}};
+\node at (5.65,0.20) {\SBMilestoneDot{2.05cm}{2030}{Language OS}};
+\end{tikzpicture}
 \end{center}
 
-\vspace{0.55cm}
+\vspace{0.40cm}
 \begin{center}
 {\SBFontTitle\fontsize{13.5}{17}\selectfont\color{SBText}From products to platform. From platform to ecosystem.}
 \end{center}

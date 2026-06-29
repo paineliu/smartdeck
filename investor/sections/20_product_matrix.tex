@@ -9,33 +9,28 @@
 \SBSlideLead{One technology stack powers multiple product lines.}
 \end{textblock*}
 
-\begin{textblock*}{3.2cm}(1.10cm,3.00cm)
-\SBMatrixCell{3.2cm}{Consumer}{SmartInput\\AI Companion}
-\end{textblock*}
-\begin{textblock*}{3.2cm}(4.85cm,3.00cm)
-\SBMatrixCell{3.2cm}{Education}{SmartBloom\\Zhihua Companion}
-\end{textblock*}
-\begin{textblock*}{3.2cm}(8.60cm,3.00cm)
-\SBMatrixCell{3.2cm}{Enterprise}{Knowledge AI\\Digital Human}
-\end{textblock*}
-\begin{textblock*}{3.2cm}(12.35cm,3.00cm)
-\SBMatrixCell{3.2cm}{Platform}{Engine SDK\\Runtime API}
-\end{textblock*}
-
-\begin{textblock*}{10.9cm}(2.65cm,5.35cm)
-\begin{beamercolorbox}[wd=10.9cm,ht=1.05cm,dp=0.16cm,sep=0.10cm,center,rounded=true,shadow=false]{sbline}
-\begin{minipage}[c][0.90cm][c]{10.1cm}
-\centering
-{\SBFontTitle\fontsize{9.6}{11.6}\selectfont\color{SBText}Language Intelligence Stack}\par
-\vspace{0.04cm}
-{\SBFontBody\fontsize{7.8}{9.4}\selectfont\color{SBMuted}Input · Recognition · Search · Knowledge · Edge AI · Runtime}
-\end{minipage}
-\end{beamercolorbox}
-\end{textblock*}
-
-\begin{textblock*}{11.5cm}(2.35cm,6.85cm)
+\begin{textblock*}{13.8cm}(1.10cm,2.70cm)
 \begin{center}
-{\SBFontBody\fontsize{9.2}{11.2}\selectfont\color{SBGray}Products are not isolated apps. They are distribution layers of the same engine.}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\node (core) at (0,0) {\SBCenterNode{4.8cm}{Language Intelligence Stack}{Input · Recognition · Search · Knowledge · Runtime}};
+\node at (-5.05,1.65) {\SBMiniNode{2.85cm}{Consumer}{SmartInput · Companion}};
+\node at (-1.75,1.65) {\SBMiniNode{2.85cm}{Education}{SmartBloom · Zhihua}};
+\node at (1.75,1.65) {\SBMiniNode{2.85cm}{Enterprise}{Knowledge AI · Digital Human}};
+\node at (5.05,1.65) {\SBMiniNode{2.85cm}{Platform}{SDK · Runtime API}};
+\node at (-3.35,-1.45) {\SBMiniNode{3.0cm}{Distribution}{Product-led adoption}};
+\node at (0,-1.45) {\SBMiniNode{3.0cm}{Data Loop}{Language assets}};
+\node at (3.35,-1.45) {\SBMiniNode{3.0cm}{Ecosystem}{Developers and devices}};
+\draw[SBPrimary, line width=0.9pt] (-3.95,1.20) -- (-1.65,0.35);
+\draw[SBPrimary, line width=0.9pt] (-1.20,1.20) -- (-0.45,0.35);
+\draw[SBPrimary, line width=0.9pt] (1.20,1.20) -- (0.45,0.35);
+\draw[SBPrimary, line width=0.9pt] (3.95,1.20) -- (1.65,0.35);
+\end{tikzpicture}
+\end{center}
+\end{textblock*}
+
+\begin{textblock*}{11.5cm}(2.35cm,6.82cm)
+\begin{center}
+{\SBFontBody\fontsize{9.2}{11.2}\selectfont\color{SBGray}Products are distribution layers of the same language intelligence engine.}
 \end{center}
 \end{textblock*}
 \SBFixedFooter

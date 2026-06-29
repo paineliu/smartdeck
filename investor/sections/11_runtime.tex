@@ -1,18 +1,22 @@
 \SBPage{Cross Platform Engine}{
-\SBSlideLead{One runtime. Multiple platforms.}
-\vspace{0.28cm}
-\begin{columns}[T,onlytextwidth]
-\column{0.23\textwidth}\SBCard{\linewidth}{Windows}{Desktop}
-\column{0.23\textwidth}\SBCard{\linewidth}{macOS}{Desktop}
-\column{0.23\textwidth}\SBCard{\linewidth}{Linux}{Server/Desktop}
-\column{0.23\textwidth}\SBCard{\linewidth}{Android}{Mobile}
-\end{columns}
+\SBSlideLead{One language runtime across desktop, mobile and edge devices.}
+\vspace{0.25cm}
 
-\vspace{0.24cm}
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\node (rt) at (0,1.55) {\SBCenterNode{4.2cm}{SmartDeck Runtime}{Shared language intelligence core}};
+\node (engine) at (0,0.15) {\SBCenterNode{3.7cm}{Language Engine}{Input · Search · Knowledge · Agent}};
+\draw[SBPrimary, line width=1pt, -{Latex[length=2mm]}] (rt) -- (engine);
 
-\begin{columns}[T,onlytextwidth]
-\column{0.31\textwidth}\SBCard{\linewidth}{HarmonyOS}{Mobile Devices}
-\column{0.31\textwidth}\SBCard{\linewidth}{iOS}{Mobile}
-\column{0.31\textwidth}\SBCard{\linewidth}{Embedded Linux}{RK3568/RK3576/RK3588}
-\end{columns}
+\node at (-5.30,3.00) {\SBMiniNode{2.25cm}{Windows}{Desktop}};
+\node at (-2.65,3.00) {\SBMiniNode{2.25cm}{macOS}{Desktop}};
+\node at (0,3.00) {\SBMiniNode{2.25cm}{Linux}{Server/Desktop}};
+\node at (2.65,3.00) {\SBMiniNode{2.25cm}{Android}{Mobile}};
+\node at (5.30,3.00) {\SBMiniNode{2.25cm}{iOS}{Mobile}};
+
+\node at (-3.70,-1.15) {\SBMiniNode{2.75cm}{HarmonyOS}{Devices}};
+\node at (0,-1.15) {\SBMiniNode{2.75cm}{Embedded Linux}{RK3568/RK3576}};
+\node at (3.70,-1.15) {\SBMiniNode{2.75cm}{AI Hardware}{Edge devices}};
+\end{tikzpicture}
+\end{center}
 }

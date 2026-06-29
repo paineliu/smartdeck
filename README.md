@@ -27,7 +27,7 @@ Output:
 investor/build/SmartBloom_AI_Investor_Deck.pdf
 ```
 
-## v5.3.0 Focus
+## v5.4.0 Focus
 
 - Stable Beamer framework.
 - Typography and spacing tokens.
@@ -38,34 +38,39 @@ investor/build/SmartBloom_AI_Investor_Deck.pdf
 
 ## Current Version
 
-v5.3.0 — layout polish, fixed footer, fixed-height cards.
+v5.4.0 — layout polish, fixed footer, fixed-height cards.
 
 
 ## Current Version
 
-v5.3.0 — unified slide lead typography and card height polish.
+v5.4.0 — unified slide lead typography and card height polish.
 
 
 ## Current Version
 
-v5.3.0 - business story expansion with Market, Product Matrix, Business Model and Competitive Advantage.
+v5.4.0 - business story expansion with Market, Product Matrix, Business Model and Competitive Advantage.
 
 
 ## Current Version
 
-v5.3.0 - Investor Deck upgrade with Traction, Moat, Founder, Roadmap and Closing pages.
+v5.4.0 - Investor Deck upgrade with Traction, Moat, Founder, Roadmap and Closing pages.
 
 
-## v5.3.0 Design System
+## v5.4.0 Design System
 
-SmartDeck v5.3.0 introduces design tokens and component aliases for long-term theme stability.
-
-
-## v5.3.0 Visual Upgrade
-
-SmartDeck v5.3.0 refines the visual system: softer surfaces, accent rules, cleaner component hierarchy and expanded icon tokens.
+SmartDeck v5.4.0 introduces design tokens and component aliases for long-term theme stability.
 
 
-## v5.3 Icon System
+## v5.4.0 Visual Upgrade
 
-SmartDeck v5.3 adds a compile-safe icon layer, SVG source assets, and icon-aware components for investor-deck visual upgrades.
+SmartDeck v5.4.0 refines the visual system: softer surfaces, accent rules, cleaner component hierarchy and expanded icon tokens.
+
+
+## v5.4.0 Icon System
+
+SmartDeck v5.4.0 adds a compile-safe icon layer, SVG source assets, and icon-aware components for investor-deck visual upgrades.
+
+
+## v5.4 Information Graphics
+
+SmartDeck v5.4 upgrades key card-heavy pages into information graphics: architecture layers, platform map, product ecosystem, revenue tree and timeline.

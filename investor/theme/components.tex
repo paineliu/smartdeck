@@ -174,3 +174,49 @@
 \newcommand{\SBSectionKicker}[1]{%
   {\SBFontTitle\fontsize{8.2}{10}\selectfont\color{SBPrimary}\MakeUppercase{#1}}
 }
+
+
+% v5.4 information graphics components.
+\newcommand{\SBMiniNode}[3]{%
+  \begin{beamercolorbox}[wd=#1,ht=0.70cm,dp=0.10cm,sep=0.06cm,center,rounded=true,shadow=false]{sbcard}%
+    \begin{minipage}[c][0.60cm][c]{0.92\linewidth}
+      \centering
+      {\SBFontTitle\fontsize{7.9}{9.4}\selectfont\color{SBText}#2}\par
+      {\SBFontBody\fontsize{6.4}{7.8}\selectfont\color{SBMuted}#3}
+    \end{minipage}
+  \end{beamercolorbox}%
+}
+
+\newcommand{\SBCenterNode}[3]{%
+  \begin{beamercolorbox}[wd=#1,ht=0.94cm,dp=0.14cm,sep=0.08cm,center,rounded=true,shadow=false]{sbmetric}%
+    \begin{minipage}[c][0.78cm][c]{0.92\linewidth}
+      \centering
+      {\SBFontTitle\fontsize{9.8}{11.8}\selectfont\color{SBPrimary}#2}\par
+      {\SBFontBody\fontsize{7.1}{8.5}\selectfont\color{SBMuted}#3}
+    \end{minipage}
+  \end{beamercolorbox}%
+}
+
+\newcommand{\SBRevenueBranch}[3]{%
+  \begin{beamercolorbox}[wd=#1,ht=2.25cm,dp=0.16cm,sep=0.12cm,center,rounded=true,shadow=false]{sbcard}%
+    \begin{minipage}[c][2.00cm][c]{0.88\linewidth}
+      \centering
+      {\color{SBPrimary}\rule{0.45cm}{0.8pt}}\par
+      \vspace{0.08cm}
+      {\SBFontTitle\fontsize{10.2}{12.2}\selectfont\color{SBText}#2}\par
+      \vspace{0.13cm}
+      {\SBFontBody\fontsize{7.8}{9.5}\selectfont\color{SBMuted}#3}
+    \end{minipage}
+  \end{beamercolorbox}%
+}
+
+\newcommand{\SBMilestoneDot}[3]{%
+  \begin{minipage}[t]{#1}
+    \centering
+    {\color{SBPrimary}\rule{0.12cm}{0.12cm}}\par
+    \vspace{0.08cm}
+    {\SBFontTitle\fontsize{9.2}{11.0}\selectfont\color{SBText}#2}\par
+    \vspace{0.04cm}
+    {\SBFontBody\fontsize{7.2}{8.8}\selectfont\color{SBMuted}#3}
+  \end{minipage}
+}

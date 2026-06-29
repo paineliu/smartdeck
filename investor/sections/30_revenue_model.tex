@@ -1,47 +1,23 @@
 \SBPage{Revenue Model}{
-\SBSlideLead{Multiple revenue streams built on one technology stack.}
-\vspace{0.28cm}
+\SBSlideLead{A revenue tree built on one reusable language technology stack.}
+\vspace{0.20cm}
 
-\begin{columns}[T,onlytextwidth]
-\column{0.24\textwidth}
-\begin{beamercolorbox}[wd=\linewidth,ht=3.20cm,dp=0.16cm,sep=0.14cm,center,rounded=true,shadow=false]{sbcard}
-{\SBFontTitle\fontsize{12}{14.5}\selectfont\color{SBText}Consumer}\par
-\vspace{0.22cm}
-{\SBFontBody\fontsize{8.4}{10.2}\selectfont\color{SBMuted}Subscription}\par
-\vspace{0.08cm}
-{\SBFontBody\fontsize{8.4}{10.2}\selectfont\color{SBMuted}AI Keyboard}\par
-\vspace{0.08cm}
-{\SBFontBody\fontsize{8.4}{10.2}\selectfont\color{SBMuted}Companion}
-\end{beamercolorbox}
-\column{0.24\textwidth}
-\begin{beamercolorbox}[wd=\linewidth,ht=3.20cm,dp=0.16cm,sep=0.14cm,center,rounded=true,shadow=false]{sbcard}
-{\SBFontTitle\fontsize{12}{14.5}\selectfont\color{SBText}Enterprise}\par
-\vspace{0.22cm}
-{\SBFontBody\fontsize{8.4}{10.2}\selectfont\color{SBMuted}License}\par
-\vspace{0.08cm}
-{\SBFontBody\fontsize{8.4}{10.2}\selectfont\color{SBMuted}Private Deployment}\par
-\vspace{0.08cm}
-{\SBFontBody\fontsize{8.4}{10.2}\selectfont\color{SBMuted}Custom AI}
-\end{beamercolorbox}
-\column{0.24\textwidth}
-\begin{beamercolorbox}[wd=\linewidth,ht=3.20cm,dp=0.16cm,sep=0.14cm,center,rounded=true,shadow=false]{sbcard}
-{\SBFontTitle\fontsize{12}{14.5}\selectfont\color{SBText}Developer}\par
-\vspace{0.22cm}
-{\SBFontBody\fontsize{8.4}{10.2}\selectfont\color{SBMuted}SDK}\par
-\vspace{0.08cm}
-{\SBFontBody\fontsize{8.4}{10.2}\selectfont\color{SBMuted}API}\par
-\vspace{0.08cm}
-{\SBFontBody\fontsize{8.4}{10.2}\selectfont\color{SBMuted}Runtime}
-\end{beamercolorbox}
-\column{0.24\textwidth}
-\begin{beamercolorbox}[wd=\linewidth,ht=3.20cm,dp=0.16cm,sep=0.14cm,center,rounded=true,shadow=false]{sbcard}
-{\SBFontTitle\fontsize{12}{14.5}\selectfont\color{SBText}Hardware}\par
-\vspace{0.22cm}
-{\SBFontBody\fontsize{8.4}{10.2}\selectfont\color{SBMuted}AI Keyboard}\par
-\vspace{0.08cm}
-{\SBFontBody\fontsize{8.4}{10.2}\selectfont\color{SBMuted}AI Device}\par
-\vspace{0.08cm}
-{\SBFontBody\fontsize{8.4}{10.2}\selectfont\color{SBMuted}Digital Human}
-\end{beamercolorbox}
-\end{columns}
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\node (rev) at (0,2.55) {\SBCenterNode{4.0cm}{Revenue}{Recurring and platform-led}};
+\node at (-5.10,0.70) {\SBRevenueBranch{2.55cm}{Consumer}{Subscription\\AI Keyboard\\Companion}};
+\node at (-1.70,0.70) {\SBRevenueBranch{2.55cm}{Enterprise}{License\\Private deployment\\Custom AI}};
+\node at (1.70,0.70) {\SBRevenueBranch{2.55cm}{Developer}{SDK\\API\\Runtime}};
+\node at (5.10,0.70) {\SBRevenueBranch{2.55cm}{Hardware}{AI Keyboard\\AI Device\\Digital Human}};
+\draw[SBPrimary, line width=0.9pt] (rev.south) -- (-5.10,1.92);
+\draw[SBPrimary, line width=0.9pt] (rev.south) -- (-1.70,1.92);
+\draw[SBPrimary, line width=0.9pt] (rev.south) -- (1.70,1.92);
+\draw[SBPrimary, line width=0.9pt] (rev.south) -- (5.10,1.92);
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.02cm}
+\begin{center}
+{\SBFontBody\fontsize{9.0}{11.0}\selectfont\color{SBGray}Multiple commercial paths. One core engine.}
+\end{center}
 }

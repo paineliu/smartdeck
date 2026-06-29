@@ -1,5 +1,16 @@
 # Changelog
 
+## v5.4.0
+
+- Information Graphics upgrade.
+- Redesigned Language Intelligence Stack as a layered architecture diagram.
+- Redesigned SmartSearch as a query-to-engine information graphic.
+- Redesigned Cross Platform Engine as a runtime-platform map.
+- Redesigned Product Matrix as a product ecosystem map.
+- Redesigned Revenue Model as a revenue tree.
+- Redesigned Milestones as a horizontal timeline.
+- Added reusable mini-node, center-node, revenue-branch and milestone-dot components.
+
 ## v5.3.0
 
 - Added `investor/assets/icons/` with a unified outline SVG source icon set.
