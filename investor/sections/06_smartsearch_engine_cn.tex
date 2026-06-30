@@ -1,0 +1,51 @@
+\SBPage{SmartSearch 检索引擎}{
+\SBSlideLead{统一检索，连接语言与知识。}
+
+\vspace{0.20cm}
+
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm]
+
+\node (query) at (0,3.20)
+{\SBCenterNode{3.2cm}{用户查询}{文本 · 拼音 · 语义}};
+
+\node (engine) at (0,1.80)
+{\SBCenterNode{4.3cm}{SmartSearch}{统一检索引擎}};
+
+\node (rag) at (0,0.35)
+{\SBCenterNode{3.5cm}{知识增强}{RAG · Agent}};
+
+\draw[SBPrimary,line width=1pt,-{Latex[length=2mm]}]
+(query)--(engine);
+
+\draw[SBPrimary,line width=1pt,-{Latex[length=2mm]}]
+(engine)--(rag);
+
+\node at (-5.2,2.35)
+{\SBMiniNode{2.3cm}{全文}{关键词}};
+
+\node at (-3.1,2.35)
+{\SBMiniNode{2.3cm}{拼音}{音形检索}};
+
+\node at (3.1,2.35)
+{\SBMiniNode{2.3cm}{语义}{向量检索}};
+
+\node at (5.2,2.35)
+{\SBMiniNode{2.3cm}{知识}{知识库}};
+
+\node at (-5.2,1.15)
+{\SBMiniNode{2.3cm}{部件}{偏旁结构}};
+
+\node at (-3.1,1.15)
+{\SBMiniNode{2.3cm}{笔画}{书写特征}};
+
+\node at (3.1,1.15)
+{\SBMiniNode{2.3cm}{语料}{Corpus}};
+
+\node at (5.2,1.15)
+{\SBMiniNode{2.3cm}{组件}{语言资源}};
+
+\end{tikzpicture}
+\end{center}
+
+}
