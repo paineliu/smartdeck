@@ -1,0 +1,38 @@
+\SBPage{Writing Foundation Model}{
+
+\SBSlideLead{Beyond Recognition. Toward Understanding.}
+
+\vspace{0.65cm}
+
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
+
+\node (input) at (-4.8,0)
+{\SBCenterNode{3.6cm}{Digital Ink}{Trajectory｜Pressure｜Time｜Tilt}};
+
+\node (wfm) at (0,0)
+{\SBCenterNode{4.5cm}{Writing Foundation Model}{WFM}};
+
+\node (understand) at (4.8,1.35)
+{\SBMiniNode{1.8cm}{Understand}{}};
+
+\node (analyze) at (4.8,0.45)
+{\SBMiniNode{1.8cm}{Analyze}{}};
+
+\node (guide) at (4.8,-0.45)
+{\SBMiniNode{1.8cm}{Guide}{}};
+
+\node (generate) at (4.8,-1.35)
+{\SBMiniNode{1.8cm}{Generate}{}};
+
+\draw[SBLine,line width=1pt,->] (input.east) -- (wfm.west);
+
+\draw[SBLine,line width=1pt,->] (wfm.east) -- (understand.west);
+\draw[SBLine,line width=1pt,->] (wfm.east) -- (analyze.west);
+\draw[SBLine,line width=1pt,->] (wfm.east) -- (guide.west);
+\draw[SBLine,line width=1pt,->] (wfm.east) -- (generate.west);
+
+\end{tikzpicture}
+\end{center}
+
+}

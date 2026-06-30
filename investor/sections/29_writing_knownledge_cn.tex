@@ -1,0 +1,37 @@
+\SBPage{书写知识与数据}{
+
+\SBSlideLead{知识与数据，共同驱动模型能力。}
+
+\vspace{0.38cm}
+
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
+
+% ======================
+% Main nodes
+% ======================
+
+\node (coach) at (0,1.85)
+{\SBMiniNode{3.2cm}{AI 书写教练}{}};
+
+\node (wfm) at (0,0)
+{\SBCenterNode{4.9cm}{书写基础模型（WFM）}{Writing Foundation Model}};
+
+\node (kg) at (-5.0,0)
+{\SBCenterNode{3.8cm}{书写知识图谱}{字形｜笔画｜部件\\结构｜风格｜书法家}};
+
+\node (corpus) at (5.0,0)
+{\SBCenterNode{3.8cm}{书写语料库}{轨迹｜错误｜反馈\\难度｜个体｜场景}};
+
+% ======================
+% Arrows
+% ======================
+
+\draw[SBLine,line width=1.1pt,->] (kg.east) -- (wfm.west);
+\draw[SBLine,line width=1.1pt,->] (corpus.west) -- (wfm.east);
+\draw[SBLine,line width=1.1pt,->] (wfm.north) -- (coach.south);
+
+\end{tikzpicture}
+\end{center}
+
+}

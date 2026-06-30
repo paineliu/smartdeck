@@ -1,0 +1,41 @@
+\SBPage{Writing Intelligence Platform}{
+
+\SBSlideLead{One foundation model. Many writing AI applications.}
+
+\vspace{0.55cm}
+
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
+
+\node (wfm) at (0,0)
+{\SBCenterNode{4.8cm}{Writing Foundation Model}{WFM}};
+
+\node (coach) at (-4.6,1.55)
+{\SBMiniNode{2.4cm}{AI Coach}{}};
+
+\node (assess) at (0,1.95)
+{\SBMiniNode{2.4cm}{Assessment}{}};
+
+\node (search) at (4.6,1.55)
+{\SBMiniNode{2.4cm}{Copybook Search}{}};
+
+\node (practice) at (-4.6,-1.55)
+{\SBMiniNode{2.4cm}{Personalized Practice}{}};
+
+\node (generate) at (0,-1.95)
+{\SBMiniNode{2.4cm}{Demo Generation}{}};
+
+\node (hardware) at (4.6,-1.55)
+{\SBMiniNode{2.4cm}{Smart Hardware}{}};
+
+\draw[SBLine,line width=1pt,->] (wfm) -- (coach);
+\draw[SBLine,line width=1pt,->] (wfm) -- (assess);
+\draw[SBLine,line width=1pt,->] (wfm) -- (search);
+\draw[SBLine,line width=1pt,->] (wfm) -- (practice);
+\draw[SBLine,line width=1pt,->] (wfm) -- (generate);
+\draw[SBLine,line width=1pt,->] (wfm) -- (hardware);
+
+\end{tikzpicture}
+\end{center}
+
+}

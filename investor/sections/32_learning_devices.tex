@@ -1,0 +1,47 @@
+\SBPage{AI Learning Devices}{
+
+\SBSlideLead{AI in real learning scenarios.}
+
+\vspace{0.45cm}
+
+\begin{center}
+
+\begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
+
+%==========================
+% Foundation
+%==========================
+
+\node (wfm) at (0,2.2)
+{\SBCenterNode{5.0cm}{Writing Foundation Model}{WFM}};
+
+%==========================
+% Devices
+%==========================
+
+\node (pen) at (-5.2,-0.2)
+{\SBMiniNode{2.2cm}{Smart Pen}{}};
+
+\node (paper) at (-1.7,-0.2)
+{\SBMiniNode{2.2cm}{Smart Paper}{}};
+
+\node (pad) at (1.7,-0.2)
+{\SBMiniNode{2.4cm}{Learning Pad}{}};
+
+\node (companion) at (5.2,-0.2)
+{\SBMiniNode{2.4cm}{AI Companion}{}};
+
+%==========================
+% Lines
+%==========================
+
+\draw[SBLine,->] (pen.north)--(wfm.south west);
+\draw[SBLine,->] (paper.north)--(wfm.south);
+\draw[SBLine,->] (pad.north)--(wfm.south);
+\draw[SBLine,->] (companion.north)--(wfm.south east);
+
+\end{tikzpicture}
+
+\end{center}
+
+}

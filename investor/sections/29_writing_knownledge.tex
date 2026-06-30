@@ -1,0 +1,37 @@
+\SBPage{Writing Knowledge \& Data}{
+
+\SBSlideLead{Knowledge and data drive intelligence.}
+
+\vspace{0.38cm}
+
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
+
+% ======================
+% Main nodes
+% ======================
+
+\node (coach) at (0,1.85)
+{\SBMiniNode{3.2cm}{AI Writing Coach}{}};
+
+\node (wfm) at (0,0)
+{\SBCenterNode{4.9cm}{Writing Foundation Model}{WFM}};
+
+\node (kg) at (-5.0,0)
+{\SBCenterNode{3.8cm}{Knowledge Graph}{Character｜Stroke｜Component\\Structure｜Style｜Calligrapher}};
+
+\node (corpus) at (5.0,0)
+{\SBCenterNode{3.8cm}{Writing Corpus}{Trajectory｜Error｜Feedback\\Difficulty｜Writer｜Context}};
+
+% ======================
+% Arrows
+% ======================
+
+\draw[SBLine,line width=1.1pt,->] (kg.east) -- (wfm.west);
+\draw[SBLine,line width=1.1pt,->] (corpus.west) -- (wfm.east);
+\draw[SBLine,line width=1.1pt,->] (wfm.north) -- (coach.south);
+
+\end{tikzpicture}
+\end{center}
+
+}

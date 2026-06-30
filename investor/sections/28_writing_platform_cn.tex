@@ -1,0 +1,41 @@
+\SBPage{书写智能平台}{
+
+\SBSlideLead{一个基础模型，支撑多种书写智能应用。}
+
+\vspace{0.55cm}
+
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
+
+\node (wfm) at (0,0)
+{\SBCenterNode{4.8cm}{书写基础模型（WFM）}{Writing Foundation Model}};
+
+\node (coach) at (-4.6,1.55)
+{\SBMiniNode{2.4cm}{AI 教练}{}};
+
+\node (assess) at (0,1.95)
+{\SBMiniNode{2.4cm}{书写评价}{}};
+
+\node (search) at (4.6,1.55)
+{\SBMiniNode{2.4cm}{碑帖检索}{}};
+
+\node (practice) at (-4.6,-1.55)
+{\SBMiniNode{2.4cm}{个性练习}{}};
+
+\node (generate) at (0,-1.95)
+{\SBMiniNode{2.4cm}{示范生成}{}};
+
+\node (hardware) at (4.6,-1.55)
+{\SBMiniNode{2.4cm}{智能硬件}{}};
+
+\draw[SBLine,line width=1pt,->] (wfm) -- (coach);
+\draw[SBLine,line width=1pt,->] (wfm) -- (assess);
+\draw[SBLine,line width=1pt,->] (wfm) -- (search);
+\draw[SBLine,line width=1pt,->] (wfm) -- (practice);
+\draw[SBLine,line width=1pt,->] (wfm) -- (generate);
+\draw[SBLine,line width=1pt,->] (wfm) -- (hardware);
+
+\end{tikzpicture}
+\end{center}
+
+}

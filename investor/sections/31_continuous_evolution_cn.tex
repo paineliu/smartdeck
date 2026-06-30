@@ -1,0 +1,51 @@
+\SBPage{持续进化}{
+
+\SBSlideLead{每一次书写，都让模型更智能。}
+
+\vspace{0.04cm}
+
+\begin{center}
+
+\begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
+
+%==========================
+% Nodes
+%==========================
+
+\node (user) at (0,2.5)
+{\SBMiniNode{3.0cm}{用户书写}{}};
+
+\node (corpus) at (0,1.0)
+{\SBMiniNode{3.4cm}{书写语料库}{}};
+
+\node (wfm) at (0,-0.6)
+{\SBCenterNode{4.6cm}{书写基础模型（WFM）}{}};
+
+\node (coach) at (0,-2.2)
+{\SBMiniNode{3.4cm}{AI 书写教练}{}};
+
+%==========================
+% Main Flow
+%==========================
+
+\draw[SBLine,->] (user)--(corpus);
+\draw[SBLine,->] (corpus)--(wfm);
+\draw[SBLine,->] (wfm)--(coach);
+
+%==========================
+% Feedback Loop
+%==========================
+
+\draw[SBPrimary,line width=1.2pt,->]
+(2.2,-2.2)
+.. controls (3.6,-1.2) and (3.6,1.5)
+.. (2.2,2.5);
+
+\node[text=SBPrimary,font=\small] at (3.8,0.2)
+{持续学习};
+
+\end{tikzpicture}
+
+\end{center}
+
+}

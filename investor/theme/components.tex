@@ -292,6 +292,14 @@
 
 
 % v5.4 information graphics components.
+\newcommand{\SBCircleNode}[1]{%
+  \tikz[baseline=(current bounding box.center)]{%
+    \node[circle,draw=SBPrimary,fill=white,line width=1.0pt,minimum size=0.74cm,inner sep=0pt] {%
+      {\SBFontTitle\fontsize{7.0}{8.4}\selectfont\color{SBPrimary}#1}%
+    };%
+  }%
+}
+
 \newcommand{\SBMiniNode}[3]{%
   \begin{beamercolorbox}[wd=#1,ht=0.70cm,dp=0.10cm,sep=0.06cm,center,rounded=true,shadow=false]{sbcard}%
     \begin{minipage}[c][0.60cm][c]{0.92\linewidth}

@@ -1,0 +1,50 @@
+\SBPage{AI 书写教练}{
+
+\SBSlideLead{不是简单评分，而是持续指导。}
+
+\vspace{0.42cm}
+
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
+
+% ======================
+% Main nodes
+% ======================
+
+\node (writing) at (-5.0,0)
+{\SBCenterNode{3.8cm}{用户书写}{笔迹｜过程｜习惯}};
+
+\node (coach) at (0,0)
+{\SBCenterNode{4.8cm}{AI 书写教练}{Powered by WFM}};
+
+\node (feedback) at (5.0,0.95)
+{\SBMiniNode{3.2cm}{诊断问题}{}};
+
+\node (guide) at (5.0,0.00)
+{\SBMiniNode{3.2cm}{给出建议}{}};
+
+\node (practice) at (5.0,-0.95)
+{\SBMiniNode{3.2cm}{生成练习}{}};
+
+% ======================
+% Arrows
+% ======================
+
+\draw[SBLine,line width=1.1pt,->] (writing.east) -- (coach.west);
+
+\draw[SBLine,line width=1.1pt,->] (coach.east) -- (feedback.west);
+\draw[SBLine,line width=1.1pt,->] (coach.east) -- (guide.west);
+\draw[SBLine,line width=1.1pt,->] (coach.east) -- (practice.west);
+
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.2cm}
+
+\begin{center}
+{\SBFontTitle\fontsize{15}{19}\selectfont\color{SBPrimary}
+从“写得对不对”，到“下一步怎么改”。
+}
+\end{center}
+
+}

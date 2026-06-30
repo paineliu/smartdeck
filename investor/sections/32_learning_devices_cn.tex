@@ -1,0 +1,47 @@
+\SBPage{智能学习终端}{
+
+\SBSlideLead{让 AI 走进真实学习场景。}
+
+\vspace{0.45cm}
+
+\begin{center}
+
+\begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
+
+%==========================
+% Foundation
+%==========================
+
+\node (wfm) at (0,2.2)
+{\SBCenterNode{5.0cm}{书写基础模型（WFM）}{Writing Foundation Model}};
+
+%==========================
+% Devices
+%==========================
+
+\node (pen) at (-5.2,-0.2)
+{\SBMiniNode{2.2cm}{智能笔}{}};
+
+\node (paper) at (-1.7,-0.2)
+{\SBMiniNode{2.2cm}{智能纸}{}};
+
+\node (pad) at (1.7,-0.2)
+{\SBMiniNode{2.4cm}{学习平板}{}};
+
+\node (companion) at (5.2,-0.2)
+{\SBMiniNode{2.4cm}{AI 学伴}{}};
+
+%==========================
+% Lines
+%==========================
+
+\draw[SBLine,->] (pen.north)--(wfm.south west);
+\draw[SBLine,->] (paper.north)--(wfm.south);
+\draw[SBLine,->] (pad.north)--(wfm.south);
+\draw[SBLine,->] (companion.north)--(wfm.south east);
+
+\end{tikzpicture}
+
+\end{center}
+
+}

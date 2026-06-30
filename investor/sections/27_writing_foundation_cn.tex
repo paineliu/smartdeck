@@ -1,0 +1,38 @@
+\SBPage{书写基础模型}{
+
+\SBSlideLead{从识别文字，到理解书写。}
+
+\vspace{0.65cm}
+
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
+
+\node (input) at (-4.8,0)
+{\SBCenterNode{3.6cm}{书写数据}{轨迹｜压力｜时间｜倾角}};
+
+\node (wfm) at (0,0)
+{\SBCenterNode{4.5cm}{书写基础模型（WFM）}{Writing Foundation Model}};
+
+\node (understand) at (4.8,1.35)
+{\SBMiniNode{1.8cm}{理解}{}};
+
+\node (analyze) at (4.8,0.45)
+{\SBMiniNode{1.8cm}{分析}{}};
+
+\node (guide) at (4.8,-0.45)
+{\SBMiniNode{1.8cm}{指导}{}};
+
+\node (generate) at (4.8,-1.35)
+{\SBMiniNode{1.8cm}{生成}{}};
+
+\draw[SBLine,line width=1pt,->] (input.east) -- (wfm.west);
+
+\draw[SBLine,line width=1pt,->] (wfm.east) -- (understand.west);
+\draw[SBLine,line width=1pt,->] (wfm.east) -- (analyze.west);
+\draw[SBLine,line width=1pt,->] (wfm.east) -- (guide.west);
+\draw[SBLine,line width=1pt,->] (wfm.east) -- (generate.west);
+
+\end{tikzpicture}
+\end{center}
+
+}
