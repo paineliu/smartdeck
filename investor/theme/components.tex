@@ -342,3 +342,35 @@
     {\SBFontBody\fontsize{7.2}{8.8}\selectfont\color{SBMuted}#3}
   \end{minipage}
 }
+
+% Layout-only helpers (no icons).
+\newcommand{\SBPillarCard}[4]{%
+  \begin{beamercolorbox}[wd=#1,ht=2.30cm,dp=0.12cm,sep=0.08cm,center,rounded=true,shadow=false]{sbcard}%
+    \begin{minipage}[c][2.08cm][c]{0.88\linewidth}
+      \centering
+      {\SBFontTitle\fontsize{9.0}{10.8}\selectfont\color{SBText}#2}\par
+      \vspace{0.05cm}
+      {\SBFontTitle\fontsize{7.0}{8.4}\selectfont\color{SBPrimary}#3}\par
+      \vspace{0.07cm}
+      {\SBFontBody\fontsize{6.8}{8.2}\selectfont\color{SBMuted}#4}
+    \end{minipage}
+  \end{beamercolorbox}%
+}
+
+\newcommand{\SBModalityItem}[2]{%
+  \begin{beamercolorbox}[wd=5.2cm,ht=0.56cm,dp=0.06cm,sep=0.06cm,leftskip=0.16cm,rounded=true,shadow=false]{sbcard}%
+    \begin{minipage}[c][0.42cm][c]{0.94\linewidth}
+      {\SBFontTitle\fontsize{9.4}{11.2}\selectfont\color{SBText}#1}\hfill
+      {\SBFontBody\fontsize{7.2}{8.6}\selectfont\color{SBGray}#2}
+    \end{minipage}
+  \end{beamercolorbox}\vspace{0.07cm}%
+}
+
+\newcommand{\SBModalityGap}[2]{%
+  \begin{beamercolorbox}[wd=5.2cm,ht=0.62cm,dp=0.08cm,sep=0.06cm,leftskip=0.16cm,rounded=true,shadow=false]{sbmetric}%
+    \begin{minipage}[c][0.46cm][c]{0.94\linewidth}
+      {\SBFontTitle\fontsize{9.8}{11.6}\selectfont\color{SBPrimary}#1}\hfill
+      {\SBFontBody\fontsize{7.2}{8.6}\selectfont\color{SBPrimary}#2}
+    \end{minipage}
+  \end{beamercolorbox}%
+}
