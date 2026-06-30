@@ -1,36 +1,42 @@
 \SBPage{AI Writing Coach}{
 
-\SBSlideLead{Understand. Diagnose. Guide.}
+\SBSlideLead{Not just scoring. Continuous guidance.}
 
-\vspace{0.45cm}
+\vspace{0.42cm}
 
 \begin{center}
-
 \begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
 
-\node (coach) at (0,1.9)
+\node (writing) at (-5.0,0)
+{\SBCenterNode{3.8cm}{User Writing}{Trajectory｜Process｜Habit}};
+
+\node (coach) at (0,0)
 {\SBCenterNode{4.8cm}{AI Writing Coach}{Powered by WFM}};
 
-\node (u) at (-4.2,0)
-{\SBMiniNode{2.2cm}{Understand}{}};
+\node (feedback) at (5.0,0.95)
+{\SBMiniNode{3.2cm}{Diagnose}{}};
 
-\node (d) at (0,0)
-{\SBMiniNode{2.2cm}{Diagnose}{}};
+\node (guide) at (5.0,0.00)
+{\SBMiniNode{3.2cm}{Guide}{}};
 
-\node (g) at (4.2,0)
-{\SBMiniNode{2.2cm}{Guide}{}};
+\node (practice) at (5.0,-0.95)
+{\SBMiniNode{3.2cm}{Practice}{}};
 
-\node (p) at (0,-2.0)
-{\SBMiniNode{3.2cm}{Personalized Practice}{}};
+\draw[SBLine,line width=1.1pt,->] (writing.east) -- (coach.west);
 
-\draw[SBLine,->] (coach)--(u);
-\draw[SBLine,->] (coach)--(d);
-\draw[SBLine,->] (coach)--(g);
-
-\draw[SBLine,->] (d)--(p);
+\draw[SBLine,line width=1.1pt,->] (coach.east) -- (feedback.west);
+\draw[SBLine,line width=1.1pt,->] (coach.east) -- (guide.west);
+\draw[SBLine,line width=1.1pt,->] (coach.east) -- (practice.west);
 
 \end{tikzpicture}
+\end{center}
 
+\vspace{0.2cm}
+
+\begin{center}
+{\SBFontTitle\fontsize{15}{19}\selectfont\color{SBPrimary}
+From ``right or wrong'' to ``what to improve next.''
+}
 \end{center}
 
 }

@@ -1,90 +1,48 @@
 \SBPage{Roadmap}{
-\SBSlideLead{Building the future of language intelligence.}
+\SBSlideLead{From writing intelligence to a global learning ecosystem.}
 
 \vspace{0.55cm}
 
-%------------------------
-% Timeline
-%------------------------
-
 \begin{center}
 
-\begin{tikzpicture}
+\begin{tikzpicture}[x=1cm,y=1cm]
 
-\draw[SBPrimary,line width=1.2pt]
-(-5.4,0)--(5.4,0);
+\draw[SBLine,line width=1.2pt] (-5.5,0)--(5.5,0);
 
-\foreach \x in {-5.4,-1.8,1.8,5.4}
-{
-\fill[SBPrimary] (\x,0) circle (2.8pt);
-}
+\node at (-4.2,0)
+{\SBCircleNode{2026}};
 
-\node at (-5.4,0.75)
-{\SBFontTitle 2026};
+\node at (-1.4,0)
+{\SBCircleNode{2027}};
 
-\node at (-1.8,0.75)
-{\SBFontTitle 2027};
+\node at (1.5,0)
+{\SBCircleNode{2028}};
 
-\node at (1.8,0.75)
-{\SBFontTitle 2028};
+\node at (4.4,0)
+{\SBCircleNode{2029+}};
 
-\node at (5.4,0.75)
-{\SBFontTitle 2029};
+\node at (-4.2,-1.05)
+{\SBMiniNode{2.8cm}{WFM \& Platform}{Writing intelligence foundation}};
 
-\node[align=center] at (-5.4,-0.95)
-{
-Platform\\
-Products
-};
+\node at (-1.4,-1.05)
+{\SBMiniNode{2.8cm}{AI Writing Coach}{Education \& enterprise SaaS}};
 
-\node[align=center] at (-1.8,-0.95)
-{
-Education\\
-Enterprise
-};
+\node at (1.5,-1.05)
+{\SBMiniNode{2.8cm}{Smart Devices}{Pen · Paper · Pad}};
 
-\node[align=center] at (1.8,-0.95)
-{
-SDK\\
-AI Devices
-};
-
-\node[align=center] at (5.4,-0.95)
-{
-Global\\
-Expansion
-};
+\node at (4.4,-1.05)
+{\SBMiniNode{3.0cm}{Global Ecosystem}{SDK · API · expansion}};
 
 \end{tikzpicture}
 
 \end{center}
 
-\vspace{0.80cm}
-
-\begin{columns}[T,onlytextwidth]
-
-\column{0.48\textwidth}
-\SBMiniNode{\linewidth}
-{Near Term}
-{Commercial AI platform}
-
-\column{0.48\textwidth}
-\SBMiniNode{\linewidth}
-{Long Term}
-{Global language intelligence}
-
-\end{columns}
-
-\vspace{0.35cm}
+\vspace{0.45cm}
 
 \begin{center}
-
 {\SBFontBody\fontsize{9}{11}\selectfont\color{SBGray}
-
-From platform to global AI ecosystem.
-
+Technology first. Product commercialization. Device scale. Global expansion.
 }
-
 \end{center}
 
 }
